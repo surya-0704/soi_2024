@@ -1,20 +1,28 @@
 const teamsData = [
     {
-      name: "ORGANIZER",
-      members: [
-        {
-            name: "Samartha",
-            image: "/Team/samartha.jpg",
-            email: "cs23bt019@iitdh.ac.in",
-            linkedin: "https://www.linkedin.com/in/samartha-452462293/",
-            twitter: "",
-            instagram: "",
-        },
-      ],
+        name: "ORGANIZERS",
+        members: [
+          {
+              name: "Vansh Yadav",
+              image: "/Team/vansh.png",
+              email: "gskm@iitdh.ac.in",
+              linkedin: "https://www.linkedin.com/in/samartha-452462293/",
+              twitter: "",
+              instagram: "",
+          },
+          {
+              name: "Samartha",
+              image: "/Team/samartha.jpg",
+              email: "cs23bt019@iitdh.ac.in",
+              linkedin: "https://www.linkedin.com/in/vansh-yadav/",
+              twitter: "",
+              instagram: "",
+          },
+        ],
     },
 
     {
-        name: "WEB-TEAM",
+        name: "WEB TEAM",
         members: [
           {
             name: "Surya",
@@ -28,7 +36,7 @@ const teamsData = [
             name: "Utkarsh Gupta",
             image: "/Team/uttu.jpg",
             email: "220020056@iitdh.ac.in",
-            linkedin: "https://www.linkedin.com/in/utkarsh-gupta-812308270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkedin: "https://www.linkedin.com/in/utkarsh-gupta-812308270",
             twitter: "",
             instagram: "",
           },
@@ -44,7 +52,7 @@ const teamsData = [
     },
 
     {
-        name: "SPACE DATA SCIENCE TEAM",
+        name: "SPACE DATA SCIENCE CLUB",
         members: [
           {
             name: "Ramank Sharma",
@@ -61,28 +69,28 @@ const teamsData = [
             linkedin: "https://www.linkedin.com/in/nishant-shailesh-mehta/",
             twitter: "",
             instagram: "",
-        },
-        {
+          },
+          {
             name: "Adarsh Gupta",
             image: "/Team/aadu.jpg",
             email: "itsmeag04@gmail.com",
             linkedin: "https://www.linkedin.com/in/adarsh-gupta--/",
             twitter: "",
             instagram: "https://www.instagram.com/acuriouskid_/",
-        },
-        {
+          },
+          {
             name: "Surya",
             image: "/Team/xyz.jpg",
             email: "220020052@iitdh.ac.in",
             linkedin: "https://www.linkedin.com/in/surya-narayan-upadhyay/",
             twitter: "https://blogs.mtdv.me/videos/twittersnu",
             instagram: "https://www.instagram.com/suryanarayanupadhyay/",
-        },
+          },
         ],
     },
 
     {
-        name: "ARTIFICIAL INTELLIGENCE TEAM",
+        name: "ARTIFICIAL INTELLIGENCE CLUB",
         members: [
           {
               name: "Pranav Kumar Pandey",
@@ -104,7 +112,7 @@ const teamsData = [
     },
 
     {
-        name: "ROBOTICS TEAM",
+        name: "ROBOTICS CLUB",
         members: [
           {
               name: "Animesh Jain",
@@ -134,7 +142,7 @@ const teamsData = [
     },
 
     {
-        name: "FINANCE TEAM",
+        name: "FINANCE CLUB",
         members: [
           {
               name: "Jai Sharma",
@@ -148,7 +156,7 @@ const teamsData = [
     },
 
     {
-        name: "CODING TEAM",
+        name: "CODING CLUB",
         members: [
           {
               name: "Atharva Tijare",
@@ -186,7 +194,7 @@ const teamsData = [
     },
   
     {
-      name: "Design TEAM",
+      name: "DESIGN CLUB",
       members: [
         {
             name: "Upakramanika Bishnu",
@@ -210,7 +218,7 @@ const teamsData = [
           email: "cs23bt072@iitdh.ac.in",
           linkedin: "",
           twitter: "",
-          instagram: "https://www.instagram.com/saipushkar_n2112?igsh=OTh1aXc4NnBhOGU1",
+          instagram: "https://www.instagram.com/saipushkar_n2112",
       },
       ],
   },

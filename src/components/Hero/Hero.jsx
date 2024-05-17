@@ -44,7 +44,7 @@ export default function Hero() {
               <h1>Summer of Innovation 2024</h1>
               <div className={styles.heroQuoteWrapper}>
                 <div className={styles.styleBar}></div>
-                <div className={styles.Quote}>This Summer Conquer your fallacies and carve your finesse.</div>
+                <div className={styles.Quote}>This Summer conquer your fallacies and carve your finesse.</div>
               </div>
             </div>
             <div className={styles.heroArtWrapper}>
@@ -70,16 +70,17 @@ export default function Hero() {
               <h1>Overview</h1>
             </div>
             <div className={styles.aboutContent}>
-              The fourth edition of Summer of Innovation is a platform for honing
-              one&rsquo;s technical skills and promoting tech culture in our
-              institute. Lasting 3 months, the event comprises of problem
-              statements from multiple domains and the participants are allowed
-              to take part in any number of them. The event is a result of the
-              contribution of about every technical organization involved with
-              tech in our institute. This year, the event shall last from 27th
-              of May and will span majorly the months of June and July, allowing the
-              participants to learn the required technical skills from scratch
-              and then implementing them in this period.
+              <div style={{padding: 10}}>
+                <center> <h3> Welcome to the fifth edition of Summer of Innovation! </h3> </center>
+              </div>
+
+              <div style={{padding: 10}}>
+                <p> Get ready to ignite your creativity and problem-solving skills as we kick off an exciting competition where students will have the opportunity to work on challenges brought forth by our technical clubs.
+                Over the course of two months, you will have the chance to collaborate with peers, learn new techniques, and showcase your abilities as you tackle the problem statements released by our clubs. Whether you're interested in coding, robotics, design, or any other technical field, there's a challenge waiting for you to sink your teeth into.
+                Join us this summer as we push the boundaries of innovation. Let's make this summer one to remember!
+                </p>
+              </div>
+                <center> <h3> Are you ready to rise to the challenge? Let the Summer of Innovation begin! </h3> </center>
             </div>
           </div>
         </div>
