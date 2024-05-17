@@ -26,11 +26,11 @@ const teamsData = [
         members: [
           {
             name: "Surya",
-            image: "/Team/xyz.jpg",
-            email: "",
+            image: "/Team/surya.jpg",
+            email: "220020052@iitdh.ac.in",
             linkedin:"https://www.linkedin.com/in/surya-narayan-upadhyay/",
-            twitter: "",
-            instagram: "",
+            twitter: "https://blogs.mtdv.me/videos/twittersnu",
+            instagram: "https://www.instagram.com/suryanarayanupadhyay/",
           },
           {
             name: "Utkarsh Gupta",
@@ -80,7 +80,7 @@ const teamsData = [
           },
           {
             name: "Surya",
-            image: "/Team/xyz.jpg",
+            image: "/Team/surya.jpg",
             email: "220020052@iitdh.ac.in",
             linkedin: "https://www.linkedin.com/in/surya-narayan-upadhyay/",
             twitter: "https://blogs.mtdv.me/videos/twittersnu",
