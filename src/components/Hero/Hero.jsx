@@ -70,12 +70,17 @@ export default function Hero() {
               <h1>Overview</h1>
             </div>
             <div className={styles.aboutContent}>
-              <center> <h3> Welcome to the fifth edition of Summer of Innovation! </h3> </center>
+              <div style={{padding: 10}}>
+                <center> <h3> Welcome to the fifth edition of Summer of Innovation! </h3> </center>
+              </div>
 
-              <p> Get ready to ignite your creativity and problem-solving skills as we kick off an exciting competition where students will have the opportunity to work on challenges brought forth by our technical clubs.
-              Over the course of two months, you will have the chance to collaborate with peers, learn new techniques, and showcase your abilities as you tackle the problem statements released by our clubs. Whether you're interested in coding, robotics, design, or any other technical field, there's a challenge waiting for you to sink your teeth into.
-              Join us this summer as we push the boundaries of innovation. Let's make this summer one to remember! </p>
-              <p> Are you ready to rise to the challenge? Let the Summer of Innovation begin! </p>
+              <div style={{padding: 10}}>
+                <p> Get ready to ignite your creativity and problem-solving skills as we kick off an exciting competition where students will have the opportunity to work on challenges brought forth by our technical clubs.
+                Over the course of two months, you will have the chance to collaborate with peers, learn new techniques, and showcase your abilities as you tackle the problem statements released by our clubs. Whether you're interested in coding, robotics, design, or any other technical field, there's a challenge waiting for you to sink your teeth into.
+                Join us this summer as we push the boundaries of innovation. Let's make this summer one to remember!
+                </p>
+              </div>
+                <center> <h3> Are you ready to rise to the challenge? Let the Summer of Innovation begin! </h3> </center>
             </div>
           </div>
         </div>
