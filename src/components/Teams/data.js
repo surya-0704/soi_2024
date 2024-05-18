@@ -27,10 +27,10 @@ const teamsData = [
           {
             name: "Surya",
             image: "/Team/surya.jpg",
-            email: "",
+            email: "220020052@iitdh.ac.in",
             linkedin:"https://www.linkedin.com/in/surya-narayan-upadhyay/",
-            twitter: "",
-            instagram: "",
+            twitter: "https://blogs.mtdv.me/videos/twittersnu",
+            instagram: "https://www.instagram.com/suryanarayanupadhyay/",
           },
           {
             name: "Utkarsh Gupta",
