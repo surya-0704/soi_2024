@@ -26,7 +26,7 @@ const teamsData = [
         members: [
           {
             name: "Surya",
-            image: "/Team/xyz.jpg",
+            image: "/Team/surya.jpg",
             email: "",
             linkedin:"https://www.linkedin.com/in/surya-narayan-upadhyay/",
             twitter: "",
@@ -80,7 +80,7 @@ const teamsData = [
           },
           {
             name: "Surya",
-            image: "/Team/xyz.jpg",
+            image: "/Team/surya.jpg",
             email: "220020052@iitdh.ac.in",
             linkedin: "https://www.linkedin.com/in/surya-narayan-upadhyay/",
             twitter: "https://blogs.mtdv.me/videos/twittersnu",
@@ -173,23 +173,31 @@ const teamsData = [
             linkedin: "www.linkedin.com/in/ahamed-noor-352a112a1",
             twitter: "",
             instagram: "",
-        },
-        {
+          },
+          {
             name: "Amogh R",
             image: "/Team/amogh.jpg",
             email: "220010005@iitdh.ac.in",
             linkedin: "https://linkedin.com/amogh-r-i2t",
             twitter: "",
             instagram: "",
-        },
-        {
+          },
+          {
             name: "Aayush Vats",
             image: "/Team/aayush.jpg",
             email: "220010001@iitdh.ac.in",
             linkedin: "https://www.linkedin.com/in/vatsaayush/",
             twitter: "twitter.com/aayushvats0112",
             instagram: "https://www.instagram.com/astrogeek.iitdh",
-        },
+          },
+          {
+            name: "Pratyush Kaurav",
+            image: "/Team/pratyush.jpeg",
+            email: "220120015@iitdh.ac.in",
+            linkedin: "https://www.linkedin.com/in/pratyush-kaurav-b4357725a/",
+            twitter: "",
+            instagram: "",
+          },
         ],
     },
   
@@ -219,6 +227,14 @@ const teamsData = [
           linkedin: "",
           twitter: "",
           instagram: "https://www.instagram.com/saipushkar_n2112",
+      },
+      {
+            name: "Ayush Singhi",
+            image: "/Team/ayushsinghifoni.jpg",
+            email: "220120015@iitdh.ac.in",
+            linkedin: "https://www.linkedin.com/in/pratyush-kaurav-b4357725a/",
+            twitter: "",
+            instagram: "",
       },
       ],
   },

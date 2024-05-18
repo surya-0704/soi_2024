@@ -75,7 +75,7 @@ let timeLineData = [
     icon: "Ques",
   },
   {
-    title: "Darkest light...Vantablack?",
+    title: "Darkest light... Vantablack?",
     description: "Pitch black my canvas, I carefully tread, Watch the darkest light, for it is the lead",
     date: "7th July",
     color: "#B983FF",

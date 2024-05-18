@@ -21,7 +21,7 @@ const Footer = () => {
       <div className={classes.footer}>
         <div className={classes.footerDiv}>
           <div className={classes.footerImageWrapper}>
-            <a href="#">
+            <a href="https://github.com/oss2019" target="_blank">
               <Image src={`${prefix + "/Footer/oss_logo.png"}`} fill priority alt="oss_logo"/>
             </a>
           </div>
