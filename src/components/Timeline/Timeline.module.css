@@ -37,3 +37,23 @@
     padding: 0 1.5rem;
   }
 }
+
+.timelineWrapper {
+  background-color: #f0f0f0; /* Example background color */
+}
+
+.gifContainer {
+  margin-top: 10px;
+  text-align: center;
+  background-color: white; /* White boundary box */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gifContainer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

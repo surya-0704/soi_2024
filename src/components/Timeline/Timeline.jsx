@@ -66,7 +66,17 @@ export default function Timeline() {
                     <h5 className="vertical-timeline-element-subtitle">
                       {data.location}
                     </h5>
+                    {data.gifUrl && (
+                      <div className={styles.gifContainer}>
+                        <img
+                          src={data.gifUrl}
+                          alt="GIF"
+                          className={styles.gif}
+                        />
+                      </div>
+                    )}
                     <p id="description">{data.description}</p>
+
                   </VerticalTimelineElement>
                 )
               })}

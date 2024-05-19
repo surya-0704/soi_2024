@@ -48,7 +48,8 @@ let timeLineData = [
   },
   {
     title: "Haha funny rat",
-    description: "[ADD GIF HERE]",
+    gifUrl: "/Timeline/mouse.gif",
+    description: "But is that a rat or a...",
     date: "23rd June",
     color: "#B983FF",
     icon: "Ques",
