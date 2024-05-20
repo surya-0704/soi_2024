@@ -6,7 +6,7 @@ let timeLineData = [
   // },
   {
     title: "Watch out... for wisdom",
-    description: "Old and one-eyed, knowledge hidden within the tree, But I need a little something, another eye for me?",
+    description: "Old and one-eyed, bearer of knowledge within the tree, I need a little help now, humans, I call upon thee",
     date: "25th May",
     color: "#B983FF",
     icon: "Ques",
@@ -26,7 +26,7 @@ let timeLineData = [
     icon: "Ques",
   },
   {
-    title: "Charades... but digital?",
+    title: "Charades... but digital",
     description: "I'm the bridge between word and sight,\nIn pixels and hues I take flight",
     date: "9th June",
     color: "#B983FF",
@@ -40,7 +40,7 @@ let timeLineData = [
     icon: "Ques",
   },
   {
-    title: "Space... inside?",
+    title: "Outer space... inside?",
     description: "Think outside but also in, Make the space where ideas begin",
     date: "16th June",
     color: "#B983FF",
@@ -72,6 +72,13 @@ let timeLineData = [
     title: "... there we go",
     description: "... click clack click clack, Can you guess where he moves?",
     date: "4th July",
+    color: "#B983FF",
+    icon: "Ques",
+  },
+  {
+    title: "Battle scars heal, but new ones come up",
+    description: "Are those deep craters, or tall mountains? The mighty Ares paints these with his enemies blood",
+    date: "7th July",
     color: "#B983FF",
     icon: "Ques",
   },
