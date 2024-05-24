@@ -4,9 +4,9 @@ const teamsData = [
         members: [
           {
               name: "Vansh Yadav",
-              image: "/Team/vansh.png",
-              email: "gskm@iitdh.ac.in",
-              linkedin: "https://www.linkedin.com/in/samartha-452462293/",
+              image: "/Team/vansh.jpg",
+              email: "gstech@iitdh.ac.in",
+              linkedin: "https://linkedin.com/in/vansh-yadav-406336290",
               twitter: "",
               instagram: "",
           },
@@ -14,7 +14,7 @@ const teamsData = [
               name: "Samartha",
               image: "/Team/samartha.jpg",
               email: "cs23bt019@iitdh.ac.in",
-              linkedin: "https://www.linkedin.com/in/vansh-yadav/",
+              linkedin: "https://www.linkedin.com/in/samartha-452462293/",
               twitter: "",
               instagram: "",
           },
@@ -40,14 +40,6 @@ const teamsData = [
             twitter: "",
             instagram: "",
           },
-          // {
-          //   name: "XYZ",
-          //   image: "/Team/xyz.jpg",
-          //   email: "",
-          //   linkedin: "",
-          //   twitter: "https://youtu.be/dQw4w9WgXcQ",
-          //   instagram: "https://www.instagram.com/virat.kohli/",
-          // },
         ],
     },
 
@@ -90,7 +82,7 @@ const teamsData = [
     },
 
     {
-        name: "ARTIFICIAL INTELLIGENCE CLUB",
+        name: "HARDLY HUMAN - AI CLUB",
         members: [
           {
               name: "Pranav Kumar Pandey",
@@ -142,7 +134,7 @@ const teamsData = [
     },
 
     {
-        name: "FINANCE CLUB",
+        name: "INSOLVENT - FINANCE CLUB",
         members: [
           {
               name: "Jai Sharma",
@@ -156,7 +148,7 @@ const teamsData = [
     },
 
     {
-        name: "CODING CLUB",
+        name: "CODE GEASS - CODING CLUB",
         members: [
           {
               name: "Atharva Tijare",
@@ -178,7 +170,7 @@ const teamsData = [
             name: "Amogh R",
             image: "/Team/amogh.jpg",
             email: "220010005@iitdh.ac.in",
-            linkedin: "https://linkedin.com/amogh-r-i2t",
+            linkedin: "https://linkedin.com/in/amogh-r-i2t",
             twitter: "",
             instagram: "",
           },
@@ -202,7 +194,7 @@ const teamsData = [
     },
   
     {
-      name: "DESIGN CLUB",
+      name: "ABHIKALPA - DESIGN CLUB",
       members: [
         {
             name: "Upakramanika Bishnu",
@@ -236,6 +228,28 @@ const teamsData = [
             twitter: "",
             instagram: "https://www.instagram.com/ayush_singhi_12",
       },
+      ],
+  },
+
+  {
+      name: "INGENE - MOTORSPORTS CLUB",
+      members: [
+        {
+            name: "Ratish Sinha",
+            image: "/Team/ratish.jpg",
+            email: "220030037@iitdh.ac.in",
+            linkedin: "",
+            twitter: "",
+            instagram: "https://www.instagram.com/ratish_aryan_1104",
+        },
+        {
+            name: "Soumya Shaw",
+            image: "/Team/soumyashaw.jpg",
+            email: "ee23bt008@iitdh.ac.in",
+            linkedin: "https://www.linkedin.com/in/soumya-shaw-860284229",
+            twitter: "",
+            instagram: "",
+        },
       ],
   },
 
