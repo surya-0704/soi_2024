@@ -41,7 +41,9 @@ export default function EventCard({ leftSideImage, data, number }) {
             }`}
           >
             <div className={styles.eventImageCard}>
-              <Image src={prefix + data.image} fill />
+              <Image src={prefix + data.image} fill
+              alt="ntg" 
+              />
             </div>
           </div>
         </div>

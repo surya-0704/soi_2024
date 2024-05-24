@@ -55,11 +55,11 @@ export default function AppBar({ current }) {
                   <div>Home</div>
                 </Link>
               </div>
-              {/* <div className={styles.option}>
+              { <div className={styles.option}>
                 <Link href="/#eventsId" scroll={false}>
                   <div>Events</div>
                 </Link>
-              </div> */}
+              </div> }
               <div className={styles.option}>
                 <Link href="/#timeline" scroll={false}>
                   <div>Timeline</div>

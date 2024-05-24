@@ -18,6 +18,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
+        <Events />
         <Timeline />
         <Teams />
       </Layout>
