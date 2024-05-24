@@ -8,14 +8,13 @@ import "react-vertical-timeline-component/style.min.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faCode,
-  faMicrochip,
-  faAnchor,
+  faFireFlameCurved,
   faBrain,
   faRobot,
   faRocket,
   faArrowTrendUp,
   faQuestion,
-  faBook
+  faPaintbrush
 } from "@fortawesome/free-solid-svg-icons"
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ""
@@ -23,13 +22,13 @@ const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ""
 export default function Timeline() {
   const icons = {
     Ques:faQuestion,
-    Design: faBook,
-    CodingClub: faCode,
-    Alokin: faMicrochip,
-    AIwars: faBrain,
-    DroneDash: faRobot,
-    Cosmoscope: faRocket,
-    Trade: faArrowTrendUp,
+    Design: faPaintbrush,
+    Coding: faCode,
+    AI: faBrain,
+    Robotics: faRobot,
+    SDS: faRocket,
+    Motorsports: faFireFlameCurved,
+    Finance: faArrowTrendUp,
   }
   return (
     <>
