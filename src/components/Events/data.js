@@ -5,7 +5,7 @@ const data = [
       "Create a Library Management System for academic institutions to modernize library operations. Gain valuable experience in software development and problem-solving while contributing to a useful project.",
     image: "/Events/coding_sr.png",
     knowMoreLink:
-     "https://drive.google.com/file/d/18gCaI9jH1rgTb634Wtk1DCp3esxOQpY2/view",
+     "https://drive.google.com/file/d/1aGR7XAZVzu8ZnD2aSb_VTj5nTL7Z0ssP/view",
   },
   {
     heading: "Threads of Triumph",
