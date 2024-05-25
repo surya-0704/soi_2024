@@ -40,6 +40,14 @@ const teamsData = [
             twitter: "",
             instagram: "",
           },
+          {
+            name: "Amogh R",
+            image: "/Team/amogh.jpg",
+            email: "220010005@iitdh.ac.in",
+            linkedin: "https://linkedin.com/in/amogh-r-i2t",
+            twitter: "",
+            instagram: "",
+          },
         ],
     },
 
