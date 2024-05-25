@@ -48,49 +48,49 @@ let timeLineData = [
   },
   //icons: Coding, AI, Robotics, Design, Motorsports, Finance
 
-  // {
-  //   title: "Haha funny rat",
-  //   gifUrl: "/Timeline/mouse.gif",
-  //   description: "But is that a rat or a ...",
-  //   date: "23rd June",
-  //   color: "#B983FF",
-  //   icon: "Ques",
-  // },
-  // {
-  //   title: "Ooooh that's deep",
-  //   description: "From white sand to red rocks, things they dream to see, All alone looking back home, what I see is a Wall blocking mE",
-  //   date: "1st July",
-  //   color: "#B983FF",
-  //   icon: "Ques",
-  // },
-  // {
-  //   title: "Doesnt sound complete... ",
-  //   description: "Across mountains and valleys, the traveler's bull's hooves... ",
-  //   date: "4th July",
-  //   color: "#B983FF",
-  //   icon: "Ques",
-  // },
-  // {
-  //   title: "... there we go",
-  //   description: "... click clack click clack, Can you guess where he moves?",
-  //   date: "4th July",
-  //   color: "#B983FF",
-  //   icon: "Ques",
-  // },
-  // {
-  //   title: "Battle scars heal, but new ones come up",
-  //   description: "Are those deep craters, or tall mountains? The mighty Ares paints these with his enemies blood",
-  //   date: "7th July",
-  //   color: "#B983FF",
-  //   icon: "Ques",
-  // },
-  // {
-  //   title: "Darkest light... Vantablack?",
-  //   description: "Pitch black my canvas, I carefully tread, Watch the darkest light, for it is the lead",
-  //   date: "7th July",
-  //   color: "#B983FF",
-  //   icon: "Ques",
-  // },
+  {
+    title: "Haha funny rat",
+    gifUrl: "/Timeline/mouse.gif",
+    description: "But is that a rat or a ...",
+    date: "23rd June",
+    color: "#B983FF",
+    icon: "Ques",
+  },
+  {
+    title: "Ooooh that's deep",
+    description: "From white sand to red rocks, things they dream to see, All alone looking back home, what I see is a Wall blocking mE",
+    date: "1st July",
+    color: "#B983FF",
+    icon: "Ques",
+  },
+  {
+    title: "Doesnt sound complete... ",
+    description: "Across mountains and valleys, the traveler's bull's hooves... ",
+    date: "4th July",
+    color: "#B983FF",
+    icon: "Ques",
+  },
+  {
+    title: "... there we go",
+    description: "... click clack click clack, Can you guess where he moves?",
+    date: "4th July",
+    color: "#B983FF",
+    icon: "Ques",
+  },
+  {
+    title: "Battle scars heal, but new ones come up",
+    description: "Are those deep craters, or tall mountains? The mighty Ares paints these with his enemies blood",
+    date: "7th July",
+    color: "#B983FF",
+    icon: "Ques",
+  },
+  {
+    title: "Darkest light... Vantablack?",
+    description: "Pitch black my canvas, I carefully tread, Watch the darkest light, for it is the lead",
+    date: "7th July",
+    color: "#B983FF",
+    icon: "Ques",
+  },
 ]
 
 export default timeLineData
