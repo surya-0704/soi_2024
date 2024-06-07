@@ -5,40 +5,41 @@ let timeLineData = [
   //   icon: "Ques",
   // },
   {
-    title: "Devshelf, Code Geass",
+    title: "Devshelf - Code Geass",
     description: "(Watch out... for wisdom) Old and one-eyed, bearer of knowledge within the tree, I need a little help now, humans, I call upon thee",
     date: "25th May",
     color: "#B983FF",
     icon: "Coding",
   },
   {
-    title: "Innovating Beyond Limits, Ingene Motorsports",
+    title: "Innovating Beyond Limits - Ingene Motorsports",
     description: "(Seems familiar... I've seen it here before!) I'm the secret sauce in Formula 1's race to the top, from aerodynamic wizardry to engine's power, I never stop",
     date: "25th May",
     color: "#B983FF",
     icon: "Motorsports",
   },
   {
-    title: "Threads of Triumph, Abhikalpa",
+    title: "Threads of Triumph - Abhikalpa",
     description: "(Working for the kings... ) From victors to victors, pixel to thread, weave the regalia for the crowned head",
     date: "25th May",
     color: "#B983FF",
     icon: "Design",
   },
   {
-    title: "Charades... but digital",
-    description: "I'm the bridge between word and sight,\nIn pixels and hues I take flight",
+    title: "StoryForge - Hardly Humans",
+    description: "(Charades... but digital) I'm the bridge between word and sight,\nIn pixels and hues I take flight",
     date: "9th June",
     color: "#B983FF",
-    icon: "Ques",
+    icon: "AI",
   },
   {
-    title: "A romantic tale... or is it?",
-    description: "The girl and the boy, going all around, the Anemoi dance at the whims of this pair",
+    title: "Twins of the Winds - Hardly Humans and Cosmosoc",
+    description: "(A romantic tale... or is it?) The girl and the boy, going all around, the Anemoi dance at the whims of this pair",
     date: "9th June",
     color: "#B983FF",
-    icon: "Ques",
+    icon: "SDS",
   },
+  //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
   {
     title: "Outer space... inside?",
     description: "Think outside but also in, Make the space where ideas begin",
@@ -46,8 +47,6 @@ let timeLineData = [
     color: "#B983FF",
     icon: "Ques",
   },
-  //icons: Coding, AI, Robotics, Design, Motorsports, Finance
-
   {
     title: "Haha funny rat",
     gifUrl: "/Timeline/mouse.gif",

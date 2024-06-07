@@ -90,7 +90,7 @@ const teamsData = [
     },
 
     {
-        name: "HARDLY HUMAN - AI CLUB",
+        name: "HARDLY HUMANS - AI CLUB",
         members: [
           {
               name: "Pranav Kumar Pandey",
