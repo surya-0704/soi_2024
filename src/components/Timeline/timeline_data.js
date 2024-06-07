@@ -25,21 +25,21 @@ let timeLineData = [
     color: "#B983FF",
     icon: "Design",
   },
-  // {
-  //   title: "StoryForge - Hardly Humans",
-  //   description: "(Charades... but digital) I'm the bridge between word and sight,\nIn pixels and hues I take flight",
-  //   date: "9th June",
-  //   color: "#B983FF",
-  //   icon: "AI",
-  // },
   {
     title: "Twins of the Winds - Hardly Humans and Cosmosoc",
     description: "(A romantic tale... or is it?) The girl and the boy, going all around, the Anemoi dance at the whims of this pair",
-    date: "9th June",
+    date: "7th June",
     color: "#B983FF",
     icon: "SDS",
   },
-  //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
+  s//icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
+  {
+    title: "Charades... but digital",
+    description: "I'm the bridge between word and sight,\nIn pixels and hues I take flight",
+    date: "9th June",
+    color: "#B983FF",
+    icon: "Ques",
+  },
   {
     title: "Outer space... inside?",
     description: "Think outside but also in, Make the space where ideas begin",
