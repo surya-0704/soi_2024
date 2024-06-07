@@ -32,7 +32,7 @@ let timeLineData = [
     color: "#B983FF",
     icon: "SDS",
   },
-  s//icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
+  //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
   {
     title: "Charades... but digital",
     description: "I'm the bridge between word and sight,\nIn pixels and hues I take flight",
