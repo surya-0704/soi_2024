@@ -34,11 +34,11 @@ let timeLineData = [
   },
   //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
   {
-    title: "Charades... but digital",
-    description: "I'm the bridge between word and sight,\nIn pixels and hues I take flight",
+    title: "StoryForge - Hardly Human",
+    description: "(Charades... but digital) I'm the bridge between word and sight,\nIn pixels and hues I take flight",
     date: "9th June",
     color: "#B983FF",
-    icon: "Ques",
+    icon: "AI",
   },
   {
     title: "Outer space... inside?",

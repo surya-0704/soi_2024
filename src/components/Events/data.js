@@ -21,19 +21,20 @@ const data = [
     knowMoreLink:
       "https://drive.google.com/file/d/1P9iEExNXVS2nX9UtqFFAJqFVKxgGYG3M/view",
   },
-  // {
-  //   heading: "StoryForge",
-  //   content: "Unleash the power of machine learning and language models to create captivating stories from text and transform them into stunning videos. Ignite your imagination and dive into the world of StoryForge.",
-  //   image: "/Events/ai_sr.jpg",
-  //   knowMoreLink:
-  //     "https://drive.google.com/file/d/1k9w9MrWqEweP3hfbp0yYXcHfohnJx3fx/view",
-  // },
+
   {
     heading: "Twins of the Winds",
     content: "Explore the climate phenomenon El Nino with a machine learning model to reveal intricate patterns and predictive insights that traditional methods might overlook, get a deeper understanding of its impact on global weather patterns.",
     image: "/Events/ai_sds_jr.jpg",
     knowMoreLink:
       "https://drive.google.com/file/d/1ILR6ceqtur_g5-jifgNyqjxMWsoCLqS8/view",
+  },
+  {
+    heading: "StoryForge",
+    content: "Unleash the power of machine learning and language models to create captivating stories from text and transform them into stunning videos. Ignite your imagination and dive into the world of StoryForge.",
+    image: "/Events/ai_sr.jpg",
+    knowMoreLink:
+      "https://drive.google.com/file/d/1k9w9MrWqEweP3hfbp0yYXcHfohnJx3fx/view",
   },
 ];
 
