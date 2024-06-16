@@ -36,6 +36,13 @@ const data = [
     knowMoreLink:
       "https://drive.google.com/file/d/1k9w9MrWqEweP3hfbp0yYXcHfohnJx3fx/view",
   },
+  {
+    heading: "Render in Blender",
+    content: "Learn Blender with us and tap into your creative potential by designing and creating a 3D isometric model of a bedroom using the software",
+    image: "Events/soi_jr_icon_abhikalpa_2.png",
+    knowMoreLink:
+      "https://drive.google.com/file/d/1CGS9LqGAePOPh29aAtI4gB0za6qnG5Pk/view?usp=sharing",
+  },
 ];
 
 export default data;

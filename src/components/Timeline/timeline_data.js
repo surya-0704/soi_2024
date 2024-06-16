@@ -41,11 +41,11 @@ let timeLineData = [
     icon: "AI",
   },
   {
-    title: "Outer space... inside?",
-    description: "Think outside but also in, Make the space where ideas begin",
+    title: "Render in Blender",
+    description: "(Outer space... inside?) Think outside but also in, Make the space where ideas begin",
     date: "16th June",
     color: "#B983FF",
-    icon: "Ques",
+    icon: "Design",
   },
   {
     title: "Haha funny rat",
