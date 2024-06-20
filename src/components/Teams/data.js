@@ -42,17 +42,18 @@ const teamsData = [
           },
           {
             name: "Amogh R",
+            image: "/Team/super_secret.png",
             image: "/Team/amogh.jpg",
             email: "220010005@iitdh.ac.in",
             linkedin: "https://linkedin.com/in/amogh-r-i2t",
-            twitter: "",
+            twitter: "DigestedInBase64{aHR0cHM6Ly93d3cubWVkaWFmaXJlLmNvbS9maWxlLzU1aGU1MTVuaTRxcDU1OC93aGF0X2lzX3RoaXMub3V0L2ZpbGU=}",
             instagram: "",
           },
         ],
     },
 
     {
-        name: "SPACE DATA SCIENCE CLUB",
+        name: "COSMOSOC - SDS CLUB",
         members: [
           {
             name: "Ramank Sharma",
@@ -90,7 +91,7 @@ const teamsData = [
     },
 
     {
-        name: "HARDLY HUMANS - AI CLUB",
+        name: "HARDLY HUMAN - AI CLUB",
         members: [
           {
               name: "Pranav Kumar Pandey",
@@ -148,7 +149,7 @@ const teamsData = [
               name: "Jai Sharma",
             image: "/Team/jai.jpg",
               email: "220120009@iitdh.ac.in",
-              linkedin: "www.linkedin.com/in/jaisharma1902",
+              linkedin: "https://linkedin.com/in/jaisharma1902",
               twitter: "",
               instagram: "https://www.instagram.com/jaisharma___/",
           },
@@ -170,7 +171,7 @@ const teamsData = [
             name: "Ahamed Noor",
             image: "/Team/ahamed.jpeg",
             email: "225100003@iitdh.ac.in",
-            linkedin: "www.linkedin.com/in/ahamed-noor-352a112a1",
+            linkedin: "https://linkedin.com/in/ahamed-noor-352a112a1",
             twitter: "",
             instagram: "",
           },
@@ -187,7 +188,7 @@ const teamsData = [
             image: "/Team/aayush.jpg",
             email: "220010001@iitdh.ac.in",
             linkedin: "https://www.linkedin.com/in/vatsaayush/",
-            twitter: "twitter.com/aayushvats0112",
+            twitter: "https://twitter.com/aayushvats0112",
             instagram: "https://www.instagram.com/astrogeek.iitdh",
           },
           {

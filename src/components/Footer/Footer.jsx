@@ -44,7 +44,7 @@ const Footer = () => {
           <div className={classes.footerContactWrapper}>
             <div>
               <a
-                href="mailto:gstech@iitdh.ac.in@"
+                href="mailto:gstech@iitdh.ac.in"
                 className={classes.footerlink}
               >
                 gstech@iitdh.ac.in
@@ -52,12 +52,12 @@ const Footer = () => {
             </div>
             <div>
               <a
-                href="mailto:oss@iitdh.ac.in@"
+                href="mailto:oss@iitdh.ac.in"
                 className={classes.footerlink}
               >
                 oss@iitdh.ac.in
               </a>
-            </div>
+            </div>=
           </div>
           <div className={classes.rightFooterWrapper}>
             <div className={classes.footerIconsWrapper}>
@@ -71,6 +71,19 @@ const Footer = () => {
                   loading="lazy"
                   alt="White Instagram Icon"
                   className="socialmediaicon"
+                />
+              </a>
+              <a
+                href="/Team/super_secret.png"
+                target="_blank"
+                className={classes.footerlink}
+              >
+                <img
+                  src="/Team/super_secret.svg"
+                  loading="lazy"
+                  alt="White Instagram Icon"
+                  className="socialmediaicon"
+                  width="45"
                 />
               </a>
             </div>
