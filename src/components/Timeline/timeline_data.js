@@ -5,17 +5,20 @@ let timeLineData = [
   //   icon: "Ques",
   // },
   {
-    title: "Devshelf - Code Geass",
+    title: "Devshelf",
+    location: "Code Geass - Coding Club",
     description: "(Watch out... for wisdom) Old and one-eyed, bearer of knowledge within the tree, I need a little help now, humans, I call upon thee",
     date: "25th May",
     color: "#B983FF",
+// change to B983FF
     icon: "Coding",
   },
   {
     title: "Innovating Beyond Limits - Ingene Motorsports",
     description: "(Seems familiar... I've seen it here before!) I'm the secret sauce in Formula 1's race to the top, from aerodynamic wizardry to engine's power, I never stop",
     date: "25th May",
-    color: "#B983FF",
+    color: "#FFB84C"
+// change to FFB84C,
     icon: "Motorsports",
   },
   {
@@ -23,6 +26,7 @@ let timeLineData = [
     description: "(Working for the kings... ) From victors to victors, pixel to thread, weave the regalia for the crowned head",
     date: "25th May",
     color: "#B983FF",
+// change toWHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT
     icon: "Design",
   },
   {
@@ -30,13 +34,14 @@ let timeLineData = [
     description: "(A romantic tale... or is it?) The girl and the boy, going all around, the Anemoi dance at the whims of this pair",
     date: "7th June",
     color: "#B983FF",
+// change toWHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT
     icon: "SDS",
   },
   {
     title: "StoryForge - Hardly Human",
     description: "(Charades... but digital) I'm the bridge between word and sight,\nIn pixels and hues I take flight",
     date: "9th June",
-    color: "#B983FF",
+    color: "#00FFFF",
     icon: "AI",
   },
   {
@@ -44,6 +49,7 @@ let timeLineData = [
     description: "(Outer space... inside?) Think outside but also in, Make the space where ideas begin",
     date: "16th June",
     color: "#B983FF",
+// change toWHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT
     icon: "Design",
   },
   //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
@@ -53,6 +59,7 @@ let timeLineData = [
     description: "But is that a rat or a ...",
     date: "23rd June",
     color: "#B983FF",
+// chage toWHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT
     icon: "Ques",
   },
   {
@@ -60,6 +67,7 @@ let timeLineData = [
     description: "From white sand to red rocks, things they dream to see, All alone looking back home, what I see is a Wall blocking mE",
     date: "1st July",
     color: "#B983FF",
+// change to FFB84C
     icon: "Ques",
   },
   {
@@ -67,6 +75,7 @@ let timeLineData = [
     description: "Across mountains and valleys, the traveler's bull's hooves... ",
     date: "4th July",
     color: "#B983FF",
+
     icon: "Ques",
   },
   {
