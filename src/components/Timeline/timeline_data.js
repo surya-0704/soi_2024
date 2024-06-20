@@ -32,7 +32,6 @@ let timeLineData = [
     color: "#B983FF",
     icon: "SDS",
   },
-  //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
   {
     title: "StoryForge - Hardly Human",
     description: "(Charades... but digital) I'm the bridge between word and sight,\nIn pixels and hues I take flight",
@@ -41,12 +40,13 @@ let timeLineData = [
     icon: "AI",
   },
   {
-    title: "Render in Blender",
+    title: "Render in Blender - Abhikalpa",
     description: "(Outer space... inside?) Think outside but also in, Make the space where ideas begin",
     date: "16th June",
     color: "#B983FF",
     icon: "Design",
   },
+  //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
   {
     title: "Haha funny rat",
     gifUrl: "/Timeline/mouse.gif",
