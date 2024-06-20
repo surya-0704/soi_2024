@@ -46,7 +46,7 @@ const teamsData = [
             image: "/Team/amogh.jpg",
             email: "220010005@iitdh.ac.in",
             linkedin: "https://linkedin.com/in/amogh-r-i2t",
-            twitter: "DigestedInBase64{aHR0cHM6Ly93d3cubWVkaWFmaXJlLmNvbS9maWxlLzU1aGU1MTVuaTRxcDU1OC93aGF0X2lzX3RoaXMub3V0L2ZpbGU=}",
+            twitter: "/Team/DigestedInBase64.txt",
             instagram: "",
           },
         ],
@@ -180,7 +180,7 @@ const teamsData = [
             image: "/Team/amogh.jpg",
             email: "220010005@iitdh.ac.in",
             linkedin: "https://linkedin.com/in/amogh-r-i2t",
-            twitter: "",
+            twitter: "/Team/DigestedInBase64.txt",
             instagram: "",
           },
           {
