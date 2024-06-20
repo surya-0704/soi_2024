@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Display</title>
+</head>
+<body>
+    <h1>Interesting...Is that it?</h1>
+    <img id="randomImage" src="" alt="Random Image" style="width: 400px;">
+    <p> Is this the only one? </p>
+
+    <script>
+        // Array of image file names in the "images" folder
+        const images = [
+            "51985cb9-5ef9-45e3-9bae-eb035ab05751.jpg",
+            "583ac778-1e6f-4d8d-b54c-cf318ac69b22.jpg",
+            "875d5fb1-9823-4eab-b444-47c8ce7465a0.jpg",
+            "ade91b1f-6e27-4676-8bfd-8e2fff7e23ca.jpg",
+            "c074daff-b018-417e-88ca-d73321b914bc.jpg",
+            "39e7f862-ae56-4203-bb3c-f435133c818a.jpg",
+            "a781d4da-eaea-4f76-83d0-c8db20627bae.jpg",
+            "7ba76bd9-e19f-4057-ae5d-40dadfe46773.jpg"
+            // Add more image file names as needed
+        ];
+
+        // Get the current Unix time
+        const unixTime = Math.floor(Date.now() / 1000);
+
+        // Get a random image from the array based on the Unix time
+        const randomIndex = unixTime % images.length;
+        const randomImage = images[randomIndex];
+
+        // Set the source of the image element to display the random image
+        document.getElementById("randomImage").src = "random_hidden_folder/" + randomImage;
+    </script>
+</body>
+</html>
