@@ -1,0 +1,2 @@
+1. src/components/Teams/Teams.jsx:
+    <h3> with {member.name} converted to dangerouslySetInnerHTML to allow for inserting anchors

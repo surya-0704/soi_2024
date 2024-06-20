@@ -74,14 +74,14 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="/Team/super_secret.png"
+                href="/Extras/super_secret.png"
                 target="_blank"
                 className={classes.footerlink}
               >
                 <img
-                  src="/Team/super_secret.svg"
+                  src="/Extras/super_secret.svg"
                   loading="lazy"
-                  alt="White Instagram Icon"
+                  alt="Secret"
                   className="socialmediaicon"
                   width="45"
                 />

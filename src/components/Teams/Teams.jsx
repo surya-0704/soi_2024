@@ -38,7 +38,7 @@ export default function Teams() {
                         />
                       </div>
                       <div className={styles.memberInfo}>
-                        <h3>{member.name}</h3>
+                        <h3 dangerouslySetInnerHTML={{ __html: member.name }}></h3>
                         <div className={styles.memberLinks}>
                           <a
                             href={`mailto:${member.email}`}

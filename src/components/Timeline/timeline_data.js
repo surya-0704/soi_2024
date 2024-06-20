@@ -20,7 +20,7 @@ let timeLineData = [
     location: "Abhikalpa - Design Club",
     description: "Working for the kings; \"From victors to victors, pixel to thread, weave the regalia for the crowned head\"",
     date: "25th May",
-    color: "#ff00ff",
+    color: "#ff71b7",
     icon: "Design",
   },
   {
@@ -44,7 +44,7 @@ let timeLineData = [
     location: "Abhikalpa - Design Club",
     description: "Outer space... inside? ; \"Think outside but also in, Make the space where ideas begin\"",
     date: "16th June",
-    color: "#ff00ff",
+    color: "#ff71b7",
     icon: "Design",
   },
   //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
