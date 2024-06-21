@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whack a circle!</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
+    #circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid transparent; /* Add a transparent border */
+    }
+
+    #circle::after {
+        content: '';
+        width: calc(100% - 4px); /* Adjust width to account for border thickness */
+        height: calc(100% - 4px); /* Adjust height to account for border thickness */
+        border: 2px solid black; /* Add a border around the circumference */
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #click-text {
+        color: white;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+<div id="circle">
+    <div id="click-text">Click Me!</div>
+</div>
+
+<script>
+    const circle = document.getElementById('circle');
+    const clickText = document.getElementById('click-text');
+    const viewportWidth = window.innerWidth * 0.9;
+    const viewportHeight = window.innerHeight * 0.9;
+
+    function getRandomPosition() {
+        const x = Math.floor(Math.random() * viewportWidth);
+        const y = Math.floor(Math.random() * viewportHeight);
+        return { x, y };
+    }
+
+    function getRandomColor() {
+        return '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+
+    function getContrastColor(hexColor) {
+        const r = parseInt(hexColor.substr(1, 2), 16);
+        const g = parseInt(hexColor.substr(3, 2), 16);
+        const b = parseInt(hexColor.substr(5, 2), 16);
+        const inverseR = 255 - r;
+        const inverseG = 255 - g;
+        const inverseB = 255 - b;
+        return `rgb(${inverseR}, ${inverseG}, ${inverseB})`;
+    }
+
+    function moveCircle() {
+        const newPosition = getRandomPosition();
+        const newColor = getRandomColor();
+        const contrastColor = getContrastColor(newColor);
+        const newRadius = Math.floor(Math.random() * (200 - 50 + 1)) + 50;
+
+        circle.style.left = newPosition.x + 'px';
+        circle.style.top = newPosition.y + 'px';
+        circle.style.width = newRadius + 'px';
+        circle.style.height = newRadius + 'px';
+        circle.style.backgroundColor = newColor;
+        circle.style.color = contrastColor;
+        clickText.style.color = contrastColor;
+        document.body.style.backgroundColor = contrastColor;
+    }
+
+    // Check if the device is a mobile device
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        circle.addEventListener('click', moveCircle);
+    } else {
+        circle.addEventListener('mouseover', moveCircle);
+    }
+
+    moveCircle(); // Initial position
+</script>
+</body>
+</html>

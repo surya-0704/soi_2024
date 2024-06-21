@@ -58,6 +58,14 @@ const Footer = () => {
                 oss@iitdh.ac.in
               </a>
             </div>
+            <div>
+              <a
+                href="/Extras/stretchhh.html"
+                className={classes.footerlink}
+              >
+                Click me!
+              </a>
+            </div>
           </div>
           <div className={classes.rightFooterWrapper}>
             <div className={classes.footerIconsWrapper}>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Don't Bother scrolling</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
+    .input-container {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .barcode-text {
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        letter-spacing: 0;
+        line-height: 10px; /* Adjust line height for vertical stretch */
+        transform-origin: top left;
+        transform: scaleX(1) scaleY(1000);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Ensure the div takes up full height of its parent */
+        padding-top: 0px;
+        user-select: none; /* Make the text unselectable */
+    }
+
+    button {
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+<h1> Don't bother scrolling </h1>
+<h4> Seriously, don't bother scrolling </h3>
+<div class="input-container">
+    <label for="scaleX">A mathematician's love:</label>
+    <input type="number" id="scaleX">
+</div>
+<div class="input-container">
+    <label for="scaleY">...is for two:</label>
+    <input type="number" id="scaleY">
+</div>
+<button onclick="applyTransform()">SQUISH</button>
+<!-- <div class="text-container"> -->
+    <div class="barcode-text" id="barcodeText">
+    </div>
+<!-- </div> -->
+
+<script>
+function _0xda3f(_0x5cc7ba,_0x2a57c7){const _0x56b781=_0x56b7();return _0xda3f=function(_0xda3fd4,_0x8df5f2){_0xda3fd4=_0xda3fd4-0x157;let _0x4022bd=_0x56b781[_0xda3fd4];if(_0xda3f['fTlfPf']===undefined){var _0x222b5f=function(_0x3db6ff){const _0x3163ff='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x2a3fbe='',_0x21db75='';for(let _0x42cf35=0x0,_0xff88c6,_0x1bee25,_0x198845=0x0;_0x1bee25=_0x3db6ff['charAt'](_0x198845++);~_0x1bee25&&(_0xff88c6=_0x42cf35%0x4?_0xff88c6*0x40+_0x1bee25:_0x1bee25,_0x42cf35++%0x4)?_0x2a3fbe+=String['fromCharCode'](0xff&_0xff88c6>>(-0x2*_0x42cf35&0x6)):0x0){_0x1bee25=_0x3163ff['indexOf'](_0x1bee25);}for(let _0x4fca3a=0x0,_0x37c5a3=_0x2a3fbe['length'];_0x4fca3a<_0x37c5a3;_0x4fca3a++){_0x21db75+='%'+('00'+_0x2a3fbe['charCodeAt'](_0x4fca3a)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x21db75);};_0xda3f['dDKQij']=_0x222b5f,_0x5cc7ba=arguments,_0xda3f['fTlfPf']=!![];}const _0x57f633=_0x56b781[0x0],_0x38ae60=_0xda3fd4+_0x57f633,_0x433cd0=_0x5cc7ba[_0x38ae60];return!_0x433cd0?(_0x4022bd=_0xda3f['dDKQij'](_0x4022bd),_0x5cc7ba[_0x38ae60]=_0x4022bd):_0x4022bd=_0x433cd0,_0x4022bd;},_0xda3f(_0x5cc7ba,_0x2a57c7);}function _0x56b7(){const _0x51ab79=['DhjHBNnMB3jT','C3r5Bgu','otu0ndqYnfjztwrhtW','DMfSDwu','Ahr0Chm6lY9ZB2KTmJaYnc52zxjJzwWUyxbWl0v4DhjHCY93AgfJA19Hx2nPCMnSzs5ODg1S','mJCXntu1mK9ItevQuW','B25SB2fK','nMf5wez0AG','ksbZy2fSzvKO','yMfYy29KzvrLEhq','otCXodyWAuXxufjx','mtq5nKn1z0vjEq','nty0nLvxBMPOBq','C2nHBgvy','z2v0rwXLBwvUDej5swq','otq4mdKYnM5kBuHgBW','C2nHBgvyka','ndKXodeXnuPPEKfotG','Aw5Uzxjive1m','mJy3mdaYmJHVzg9Wrw4','C2nHBgvz'];_0x56b7=function(){return _0x51ab79;};return _0x56b7();}const _0xd49efe=_0xda3f;(function(_0x11acc4,_0x4a22f5){const _0xe705d2=_0xda3f,_0x5c8d82=_0x11acc4();while(!![]){try{const _0x2de878=-parseInt(_0xe705d2(0x15e))/0x1+-parseInt(_0xe705d2(0x15f))/0x2*(parseInt(_0xe705d2(0x160))/0x3)+-parseInt(_0xe705d2(0x159))/0x4+-parseInt(_0xe705d2(0x165))/0x5*(-parseInt(_0xe705d2(0x15b))/0x6)+-parseInt(_0xe705d2(0x163))/0x7+parseInt(_0xe705d2(0x16b))/0x8+parseInt(_0xe705d2(0x167))/0x9;if(_0x2de878===_0x4a22f5)break;else _0x5c8d82['push'](_0x5c8d82['shift']());}catch(_0x532fb8){_0x5c8d82['push'](_0x5c8d82['shift']());}}}(_0x56b7,0xb2562));function applyTransform(){const _0x54b209=_0xda3f,_0x3db6ff=document[_0x54b209(0x162)](_0x54b209(0x161))[_0x54b209(0x157)],_0x3163ff=document[_0x54b209(0x162)](_0x54b209(0x168))[_0x54b209(0x157)],_0x2a3fbe=document['getElementById'](_0x54b209(0x15d));_0x2a3fbe[_0x54b209(0x16a)][_0x54b209(0x169)]=_0x54b209(0x164)+0x186a0**(_0x3db6ff-3.14159)+_0x54b209(0x15c)+0x186a0**(_0x3163ff-2.71828)+')';}window[_0xd49efe(0x15a)]=function(){const _0x5dc13a=_0xd49efe;document['getElementById']('scaleX')['value']='',document[_0x5dc13a(0x162)](_0x5dc13a(0x168))[_0x5dc13a(0x157)]='';var _0x21db75=_0x5dc13a(0x158);barcodeText[_0x5dc13a(0x166)]=_0x21db75;};</script>
+</body>
+</html>
