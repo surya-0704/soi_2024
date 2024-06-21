@@ -49,6 +49,7 @@ export default function Timeline() {
             <VerticalTimeline>
               {timeLineData.map((data, index) => {
                 return (
+                  
                   <VerticalTimelineElement
                     key={index}
                     date={data.date}
@@ -57,8 +58,9 @@ export default function Timeline() {
                       data.key / 2 ? "timeline-right" : "timeline-left"
                     }`}
                     iconStyle={{ backgroundColor: data.color }}
-                    icon={<FontAwesomeIcon icon={icons[data.icon]} />}
+                    icon={<a href={data.secretLink} style={{color: data.secretColor}}><FontAwesomeIcon icon={icons[data.icon]} /></a>}
                   >
+                  
                     <h2 className="vertical-timeline-element-title">
                       {data.title}
                     </h2>
@@ -75,7 +77,6 @@ export default function Timeline() {
                       </div>
                     )}
                     <p id="description">{data.description}</p>
-
                   </VerticalTimelineElement>
                 )
               })}

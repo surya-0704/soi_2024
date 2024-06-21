@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patience is Key</title>
+  <style>
+    body {
+      background-color: #f0f0f0; /* Light gray background color */
+      text-align: center; /* Center align the content */
+      padding: 20px; /* Add padding for better visibility */
+    }
+    .output-container {
+      width: 300px; /* Set the fixed width for the container */
+      margin: 0 auto; /* Center the container horizontally */
+      text-align: left; /* Align text to the left within the container */
+      border: 5px;
+      padding: 10px; /* Add padding for better visibility */
+    }
+  </style>
+</head>
+<body>
+
+<button onclick="generateRandomWord()">Beep boop</button>
+
+<h1>The answer to...</h1>
+
+<div class="output-container">
+  <p id="output"></p>
+</div>
+
+<div class="output-container">
+  <p id="final"></p>
+</div>
+
+<div class="output-container">
+    <input type="text" id="abc" style="display: none;" placeholder="Enter the key">
+    <button id="submitBtn" style="display: none;">Submit</button>
+</div>
+
+<script>
+let wordCount = 0x0;
+function generateRandomWord() {
+    const _0xf0d985 = [
+        'Apple',
+        'Banana',
+        'Cherry',
+        'Orange',
+        'Grape',
+        'Kiwi',
+        'Melon',
+        'Pear',
+        'Peach',
+        'Plum',
+        'Lemon',
+        'Lime',
+        'Pineapple',
+        'Blueberry',
+        'Raspberry',
+        'Strawberry',
+        'Watermelon',
+        'Mango',
+        'Papaya',
+        'Coconut',
+        'Avocado',
+        'Fig',
+        'Guava',
+        'Pomegranate',
+        'Cranberry',
+        'Apricot',
+        'Blackberry',
+        'Cantaloupe',
+        'Kiwifruit',
+        'Lychee',
+        'Nectarine',
+        'Passionfruit',
+        'Persimmon',
+        'Tangerine',
+        'Dragonfruit',
+        'Starfruit',
+        'Boysenberry',
+        'Elderberry',
+        'Mulberry',
+        'Quince',
+        'Kumquat',
+        'Plantain',
+        'Durian',
+        'Jackfruit',
+        'Kiwano',
+        'Rambutan',
+        'Ugli\x20fruit',
+        'Ackee',
+        'Breadfruit',
+        'Carambola',
+        'Feijoa',
+        'Longan',
+        'Mangosteen',
+        'Pomelo',
+        'Soursop',
+        'Tamarillo',
+        'Yuzu',
+        'Acerola',
+        'Barbados\x20cherry',
+        'Bilimbi',
+        'Jabuticaba',
+        'Miracle\x20fruit',
+        'Monstera\x20deliciosa',
+        'Pitahaya',
+        'Salak',
+        'Santol',
+        'Sapodilla',
+        'Surinam\x20cherry',
+        'Tamarind',
+        'Ugni',
+        'Yangmei',
+        'Açaí',
+        'Camu\x20camu',
+        'Cupuaçu',
+        'Grumichama',
+        'Guabiroba',
+        'Inga',
+        'Jaboticaba',
+        'Jambolan',
+        'Maracuja',
+        'Pequi',
+        'Pindaíba',
+        'Pitanga',
+        'Pupunha',
+        'Spondias',
+        'Taperebá',
+        'Uxi',
+        'Bacuri',
+        'Burahem',
+        'Caja',
+        'Caju',
+        'Cambuci',
+        'Caramuru',
+        'Cereus\x20peruvianus',
+        'Cuiabá',
+        'Curuba',
+        'Graviola',
+        'Guanabana',
+        'Guapuru',
+        'Guavirova'
+    ];
+    if (wordCount !== 0x2a) {
+        const _0xffe78 = Math['floor'](Math['random']() * _0xf0d985['length']);
+        const _0x231b63 = _0xf0d985[_0xffe78];
+        if (wordCount === 0x0) {
+            document['getElementById']('output')['innerText'] += 'the\x20Ultimate\x20Question\x20of\x20Life,\x0a';
+        } else if (wordCount === 0x1) {
+            document['getElementById']('output')['innerText'] += 'the\x20Universe,\x0a';
+        } else if (wordCount === 0x2) {
+            document['getElementById']('output')['innerText'] += 'and\x20Everything...\x0a';
+        } else {
+            document['getElementById']('output')['innerText'] += '\x20' + _0x231b63 + '\x20';
+            if (wordCount % 0x5 === 0x0) {
+                document['getElementById']('output')['innerText'] += '\x0a';
+            }
+        }
+        wordCount++;
+    } else {
+        const _0x4d7f2a = document['createElement']('a');
+        _0x4d7f2a['href'] = 'javascript:void(0);';
+        _0x4d7f2a['textContent'] = 'Ooooh...';
+        const _0x592f4d = document['getElementById']('abc');
+        _0x592f4d['style']['display'] = 'block';
+        _0x592f4d['placeholder'] = 'What\x27s\x20the\x20answer?';
+        const _0x464650 = document['getElementById']('submitBtn');
+        _0x464650['style']['display'] = 'block';
+        _0x464650['onclick'] = function () {
+            const _0x1462d5 = parseInt(_0x592f4d['value']);
+            _0x4d7f2a['href'] = reverseEngineerUrlMapping('4ppRA://A1BlHxHP~fi-.i_~SRR/Kcp-SA/SJ1p4i-XiSApi-~irr~4p2_', _0x1462d5);
+            _0x4d7f2a['textContent'] = _0x4d7f2a['href'];
+        };
+        document['getElementById']('final')['innerHTML'] = '';
+        document['getElementById']('final')['appendChild'](_0x4d7f2a);
+    }
+}
+function reverseEngineerUrlMapping(_0x221473, _0x1dccf2) {
+    const _0x1baf06 = 'pSNYgvD2GA7h.EzBX80Tdj-btaZw1PymMsuWcCOi_JR35krf6HVUo4~KLqI9xFQeln';
+    const _0x29bae6 = _0x1baf06['length'];
+    let _0x323b0f = {};
+    for (let _0x48f6c9 = 0x0; _0x48f6c9 < _0x29bae6; _0x48f6c9++) {
+        let _0x3c0573 = (_0x48f6c9 + _0x1dccf2) % _0x29bae6;
+        _0x323b0f[_0x1baf06['charAt'](_0x3c0573)] = _0x1baf06['charAt'](_0x48f6c9);
+    }
+    let _0x1f3f3a = '';
+    for (let _0x2309aa of _0x221473) {
+        _0x1f3f3a += _0x323b0f[_0x2309aa] || _0x2309aa;
+    }
+    return _0x1f3f3a;
+}
+
+</script>
+</body>
+</html>

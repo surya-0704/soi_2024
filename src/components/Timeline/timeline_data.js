@@ -4,8 +4,10 @@ let timeLineData = [
     location: "Code Geass - Coding Club",
     description: "Watch out... for wisdom; \"Old and one-eyed, bearer of knowledge within the tree, I need a little help now, humans, I call upon thee\" ",
     date: "25th May",
-    color: "#4b9dff",
+    color: "#000000",
     icon: "Coding",
+    secretColor: "#ffffff",
+    secretLink: "/Extras/patience.html"
   },
   {
     title: "Innovating Beyond Limits",
