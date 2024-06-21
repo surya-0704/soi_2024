@@ -180,7 +180,7 @@ const teamsData = [
             image: "/Team/amogh.jpg",
             email: "220010005@iitdh.ac.in",
             linkedin: "https://linkedin.com/in/amogh-r-i2t",
-            twitter: "/Team/DigestedInBase64.txt",
+            twitter: "/Extras/DigestedInBase64.txt",
             instagram: "",
           },
           {

@@ -64,7 +64,7 @@ let timeLineData = [
     icon: "Ques",
   },
   {
-    title: "Doesnt sound complete... ",
+    title: "Doesn't sound complete... ",
     description: "Across mountains and valleys, the traveler's bull's hooves... ",
     date: "4th July",
     color: "#0099ff",
@@ -79,7 +79,7 @@ let timeLineData = [
   },
   {
     title: "Battle scars heal, but new ones come up",
-    description: "Are those deep craters, or tall mountains? The mighty Ares paints these with his enemies blood",
+    description: "Are those deep craters, or tall mountains? The mighty Ares paints these with his enemies' blood",
     date: "7th July",
     color: "#00ff00",
     icon: "Ques",
