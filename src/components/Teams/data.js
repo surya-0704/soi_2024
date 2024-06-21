@@ -176,7 +176,7 @@ const teamsData = [
             instagram: "",
           },
           {
-            name: "Amogh R",
+            name: "<a href=\"/Extras/something_hidden.html\" style=\"text-decoration:none; color:black\"> Amogh R </a>",
             image: "/Team/amogh.jpg",
             email: "220010005@iitdh.ac.in",
             linkedin: "https://linkedin.com/in/amogh-r-i2t",
