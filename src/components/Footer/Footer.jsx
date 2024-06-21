@@ -57,7 +57,7 @@ const Footer = () => {
               >
                 oss@iitdh.ac.in
               </a>
-            </div>=
+            </div>
           </div>
           <div className={classes.rightFooterWrapper}>
             <div className={classes.footerIconsWrapper}>
