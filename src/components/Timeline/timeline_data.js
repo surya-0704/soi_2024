@@ -51,12 +51,13 @@ let timeLineData = [
   },
   //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
   {
-    title: "Haha funny rat",
+    title: "MicroMouse",
+    location: "Robotics Club",
     gifUrl: "/Timeline/mouse.gif",
-    description: "But is that a rat or a ...",
+    description: "Haha funny rat; But is that a rat or a ...",
     date: "23rd June",
     color: "#ff0000",
-    icon: "Ques",
+    icon: "Robotics",
   },
   {
     title: "Ooooh that's deep",

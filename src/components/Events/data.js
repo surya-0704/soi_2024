@@ -43,6 +43,13 @@ const data = [
     knowMoreLink:
       "https://drive.google.com/file/d/1CGS9LqGAePOPh29aAtI4gB0za6qnG5Pk/view?usp=sharing",
   },
+  {
+    heading: "Micromouse",
+    content: "Introducing Micromouse! Join us for an exciting showcase of speed, strategy, and innovation as tiny robotic mice navigate intricate mazes. Get ready to witness the ultimate test of agility and intelligence in this competition!",
+    image: "Events/robotics_sr.jpg",
+    knowMoreLink:
+      "https://drive.google.com/file/d/1O5KYilDeNEk0MTr7q3J872KX9OtPZSOT/view?usp=sharing",
+  },
 ];
 
 export default data;
