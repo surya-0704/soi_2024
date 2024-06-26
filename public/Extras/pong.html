@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pong Game</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    width: 70%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid white;
+    padding: 2px;
+  }
+
+  .game {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .paddle {
+    width: 10px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+</style>
+
+</head>
+<body>
+<div class="container">
+  <div class="game">
+    <div class="ball"></div>
+    <div class="paddle" id="player"></div>
+    <div class="paddle" id="computer"></div>
+  </div>
+</div>
+<script>
+  const container = document.querySelector('.container');
+  const ball = document.querySelector('.ball');
+  const playerPaddle = document.getElementById('player');
+  const computerPaddle = document.getElementById('computer');
+
+  let ballX = 0;
+  let ballY = 0;
+  let ballSpeedX = 5;
+  let ballSpeedY = 1;
+  let playerPaddleY = 50;
+  let computerPaddleY = 50;
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowUp' && playerPaddleY > 6) {
+      playerPaddleY -= 1;
+      console.log(playerPaddle.style)
+      console.log(playerPaddleY)
+    } else if (event.key === 'ArrowDown' && playerPaddleY < 94) {
+      playerPaddleY += 1;
+    }
+  });
+
+  function update() {
+    const containerRect = container.getBoundingClientRect();
+    const containerHeight = containerRect.height;
+
+    ballX += ballSpeedX;
+    ballY += ballSpeedY;
+
+    // Collision detection with walls
+    if (ballY <= 0 || ballY >= containerHeight - 20) {
+      ballSpeedY = -ballSpeedY;
+    }
+
+    // Collision detection with player paddle
+    if (ballX <= 10 && ballY >= playerPaddleY && ballY <= playerPaddleY + 80) {
+      ballSpeedX = -ballSpeedX;
+    }
+
+    // Collision detection with computer paddle
+    if (ballX >= containerRect.width - 30 && ballY >= computerPaddleY && ballY <= computerPaddleY + 80) {
+      ballSpeedX = -ballSpeedX;
+    }
+
+    // Computer AI to track the ball
+    if (ballX > containerRect.width / 2) {
+      if (ballY > computerPaddleY + 40) {
+        computerPaddleY += 1;
+      } else {
+        computerPaddleY -= 1;
+      }
+    }
+
+    ball.style.left = ballX + 'px';
+    ball.style.top = ballY + 'px';
+
+    playerPaddle.style.top = playerPaddleY + '%';
+    computerPaddle.style.top = computerPaddleY + '%';
+
+    requestAnimationFrame(update);
+  }
+
+  update();
+</script>
+</body>
+</html>
