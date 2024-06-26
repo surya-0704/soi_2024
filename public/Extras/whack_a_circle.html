@@ -29,24 +29,24 @@
 
     #circle::after {
         content: '';
-        width: calc(100% - 4px); /* Adjust width to account for border thickness */
-        height: calc(100% - 4px); /* Adjust height to account for border thickness */
-        border: 2px solid black; /* Add a border around the circumference */
+        width: calc(100%);
+        height: calc(100%);
+        border: 3px solid black;
         border-radius: 50%;
         position: absolute;
-        top: 0;
-        left: 0;
     }
 
     #click-text {
         color: white;
-        font-size: 14px;
+        font-size: 10px;
+        word-wrap: break-word; /* Allow text to wrap around */
+        text-align: center; /* Justify text to the next line */
     }
 </style>
 </head>
 <body>
 <div id="circle">
-    <div id="click-text">Click Me!</div>
+    <div id="click-text">Can't catch me!</div>
 </div>
 
 <script>
@@ -74,21 +74,31 @@
         const inverseB = 255 - b;
         return `rgb(${inverseR}, ${inverseG}, ${inverseB})`;
     }
+    
+    function getLuminosity(hexColor) {
+        const r = parseInt(hexColor.substr(1, 2), 16);
+        const g = parseInt(hexColor.substr(3, 2), 16);
+        const b = parseInt(hexColor.substr(5, 2), 16);
+        return (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    }
 
     function moveCircle() {
         const newPosition = getRandomPosition();
         const newColor = getRandomColor();
+        const newRadius = Math.floor(Math.random() * (200 - 60 + 1)) + 50;
+        
         const contrastColor = getContrastColor(newColor);
-        const newRadius = Math.floor(Math.random() * (200 - 50 + 1)) + 50;
+        const luminosity = getLuminosity(newColor);
+        
+        const textColor = luminosity > 0.5 ? 'black' : 'white';
 
         circle.style.left = newPosition.x + 'px';
         circle.style.top = newPosition.y + 'px';
         circle.style.width = newRadius + 'px';
         circle.style.height = newRadius + 'px';
         circle.style.backgroundColor = newColor;
-        circle.style.color = contrastColor;
-        clickText.style.color = contrastColor;
         document.body.style.backgroundColor = contrastColor;
+        clickText.style.color = textColor;
     }
 
     // Check if the device is a mobile device

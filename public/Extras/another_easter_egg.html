@@ -85,8 +85,10 @@
 
     function highlightButton(color) {
       document.querySelector('.' + color).style.opacity = 1;
+      document.querySelector('.' + color).style.border = "2px solid black";
       setTimeout(() => {
         document.querySelector('.' + color).style.opacity = 0.5;
+        document.querySelector('.' + color).style.border = "0px solid black";
       }, speed / 2);
     }
 

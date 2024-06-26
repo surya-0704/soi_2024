@@ -94,6 +94,20 @@ const Footer = () => {
                   width="45"
                 />
               </a>
+              <a
+                href="/Extras/disco_party.html"
+                target="_blank"
+                className={classes.footerlink}
+              >
+                <img
+                  src="/Extras/disco.png"
+                  loading="lazy"
+                  alt="Secret"
+                  className="socialmediaicon"
+                  width="45"
+                  style={{ borderRadius: '50%' }}
+                />
+              </a>
             </div>
             <div>© Copyright - {year} SOI all right reserved</div>
           </div>
