@@ -194,7 +194,7 @@
                         correctColorIndex = correctColorCellIndex;
                         gameContainer.children[correctColorCellIndex].textContent = correctColorText;
                         gameContainer.children[switchIndex].textContent = wrongColorText;
-                        // console.log("Switched", correctColorCellIndex, switchIndex);
+                        console.log("Switched", correctColorCellIndex, switchIndex);
                         break;
                     }
             }
@@ -233,7 +233,7 @@
             
             clickTimeInterval = 1 + 4*((2.718281828)**(-score/5));
             shuffleTimeInterval = 1000 * (1 + 4*((2.718281828)**(-score/10)));
-            backgroundMusic.playbackRate = 1 + 0.5 * (1 - e ** ((-x)/7))
+            backgroundMusic.playbackRate = 1 + 0.5 * (1 - 2.718281828 ** ((-score)/7))
             console.log(backgroundMusic.playbackRate);
             
             gameContainer.innerHTML = '';
