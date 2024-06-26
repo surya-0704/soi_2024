@@ -7,72 +7,97 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: black;
-        color: white;
-        font-family: 'Press Start 2P', monospace; /* Use Press Start 2P font */
-        position: relative;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', monospace; /* Use Press Start 2P font */
+    position: relative;
+}
 
-    #score-display {
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 10px 20px;
-        background-color: #28a745;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.5rem;
-    }
+#score-display {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2vw;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 4vw;
+}
 
+#game-container {
+    width: 90vw;
+    max-width: 600px; /* Set a maximum width for larger screens */
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    cursor: pointer;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+}
+
+#start-btn {
+    font-size: 5vw;
+    padding: 2vw;
+    margin-top: 2vw;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#countdown-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1vw;
+    background-color: white;
+    display: none;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
     #game-container {
-        width: 90vw;
-        height: 60vh;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        cursor: pointer;
+        width: 90%;
+        height: 50vh;
     }
 
     .cell {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
+        font-size: 2vw;
     }
 
     #start-btn {
-        font-size: 2rem;
-        padding: 10px 20px;
-        margin-top: 20px;
-        background-color: #28a745;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        font-size: 3vw;
+        padding: 1vw;
+        margin-top: 1vw;
     }
 
-    #countdown-bar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 5px;
-        background-color: white;
-        display: none;
+    #score-display {
+        font-size: 3vw;
     }
+}
+
+
 </style>
 
 <style>
