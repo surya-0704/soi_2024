@@ -74,49 +74,75 @@
         display: none;
     }
 
-    @media only screen and (min-width: 768px) {
-        /* Styles for tablets and larger devices */
+    /* Media Query for smaller screens */
+    @media only screen and (max-width: 600px) {
         #game-container {
-            width: 70vw;
+            width: 90%;
             height: 50vh;
         }
-    }
 
-    @media only screen and (min-width: 1024px) {
-        /* Styles for desktop screens */
+        .cell {
+            font-size: 2vw;
+        }
+
+        #start-btn {
+            font-size: 3vw;
+            padding: 1vw;
+            margin-top: 1vw;
+        }
+
+        #score-display {
+            font-size: 3vw;
+        }
+    }
+    
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
         #game-container {
-            width: 60vw;
+            width: 70%;
             height: 40vh;
+        }
+
+        .cell {
+            font-size: 1.5vw;
+        }
+
+        #start-btn {
+            font-size: 2.5vw;
+            padding: 0.5vw;
+            margin-top: 0.5vw;
+        }
+
+        #score-display {
+            font-size: 2.5vw;
         }
     }
 </style>
 
-
 <style>
-.pop-out {
-  color: black;
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  animation: popOut 1s forwards;
-}
+    .pop-out {
+    color: black;
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: popOut 1s forwards;
+    }
 
-@keyframes popOut {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
+    @keyframes popOut {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    }
 </style>
 
 </head>
@@ -142,12 +168,24 @@
     const countdownBar = document.getElementById('countdown-bar');
     const scoreDisplay = document.getElementById('score-display');
     const numberOfCells = 16;
+    
+    const e = 2.718281828;
 
     let score = 0;
     let correctColorIndex;
     let correctNameIndex;
-    let clickTimeInterval = 5;
-    let shuffleTimeInterval = 5000;
+    
+    const maxClickCountdownTime = 9;
+    const minClickCountdownTime = 2;
+    const maxShuffleTime = 8000;
+    const minShuffleTime = 3000;
+    const maxShuffleTimeInterval = 1000;
+    const minShuffleTimeInterval = 500;
+    const minPlaybackRate = 1;
+    const maxPlaybackRate = 1.3;
+    
+    let clickCountdownTime = maxClickCountdownTime;
+    let shuffleTimeInterval = maxShuffleTimeInterval;
 
     startBtn.addEventListener('click', setupGameAndBegin);
     
@@ -187,6 +225,11 @@
         countdownBar.style.transition = 'width 0s linear'
         countdownBar.style.width = '100%';
         
+        currentShuffleTime = Math.floor(Math.random() * (maxShuffleTime - minShuffleTime + 1)) + minShuffleTime;
+        let nextMultiple = Math.ceil(currentShuffleTime / shuffleTimeInterval) * shuffleTimeInterval;
+        currentShuffleTime = nextMultiple;
+        console.log(currentShuffleTime, shuffleTimeInterval, nextMultiple/shuffleTimeInterval);
+        
         const interval = setInterval(() => {
             createDerangement(gameContainer);
                     
@@ -215,19 +258,19 @@
                         break;
                     }
             }
-        }, shuffleTimeInterval/5);
+        }, shuffleTimeInterval);
         
         setTimeout(() => {
             clearInterval(interval);
             setTimeout(() => {
                 checkSelection();
-            }, shuffleTimeInterval/5);
+            }, shuffleTimeInterval);
             setTimeout(() => {
                 checkSelection();
             }, 0);
-            countdownBar.style.transition = 'width ' + clickTimeInterval + 's linear'
+            countdownBar.style.transition = 'width ' + clickCountdownTime + 's linear'
             countdownBar.style.width = '0%';
-        }, shuffleTimeInterval);
+        }, currentShuffleTime);
         
         
     }
@@ -248,9 +291,9 @@
             
             const backgroundMusic = document.getElementById('backgroundMusic');
             
-            clickTimeInterval = 1 + 4*((2.718281828)**(-score/5));
-            shuffleTimeInterval = 1000 * (1 + 4*((2.718281828)**(-score/10)));
-            backgroundMusic.playbackRate = 1 + 0.5 * (1 - 2.718281828 ** ((-score)/7))
+            clickCountdownTime = minClickCountdownTime + (maxClickCountdownTime - minClickCountdownTime) * (e ** (-score/10));
+            shuffleTimeInterval = minShuffleTimeInterval + (maxShuffleTimeInterval - minShuffleTimeInterval) * (e ** (-score/10));
+            backgroundMusic.playbackRate = maxPlaybackRate - (maxPlaybackRate - minPlaybackRate) * (e ** (-score/20));
             console.log(backgroundMusic.playbackRate);
             
             gameContainer.innerHTML = '';
@@ -265,8 +308,8 @@
             gameContainer.innerHTML = '';
             startBtn.style.display = 'block';
             
-            clickTimeInterval = 5;
-            shuffleTimeInterval = 5000;
+            clickCountdownTime = maxClickCountdownTime;
+            shuffleTimeInterval = maxShuffleTimeInterval;
             
             const backgroundMusic = document.getElementById('backgroundMusic');
             backgroundMusic.playbackRate = 1;
@@ -284,8 +327,8 @@
             gameContainer.innerHTML = '';
             startBtn.style.display = 'block';
             
-            clickTimeInterval = 5;
-            shuffleTimeInterval = 5000;
+            clickCountdownTime = maxClickCountdownTime;
+            shuffleTimeInterval = maxShuffleTimeInterval;
             
             const backgroundMusic = document.getElementById('backgroundMusic');
             backgroundMusic.playbackRate = 1;
@@ -361,3 +404,4 @@
 
 </body>
 </html>
+
