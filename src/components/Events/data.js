@@ -50,6 +50,13 @@ const data = [
     knowMoreLink:
       "https://drive.google.com/file/d/1O5KYilDeNEk0MTr7q3J872KX9OtPZSOT/view?usp=sharing",
   },
+  {
+    heading: "Rover Dynamics",
+    content: "Design a rover model using Onshape, focusing on an effective suspension system and innovative features for dirt terrain. Ensure originality by improving upon CAD models from sites like GrabCAD. Submissions will be graded on design, suspension system, basic mechanisms, and additional innovations. Directly downloaded models without changes will be disqualified.",
+    image: "Events/ingene_sr.jpg",
+    knowMoreLink:
+      "https://drive.google.com/file/d/1nmM7QHYibtQDO8vXYr59e4D_AAxPFbLL/view",
+  },
 ];
 
 export default data;

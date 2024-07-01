@@ -49,7 +49,6 @@ let timeLineData = [
     color: "#ff71b7",
     icon: "Design",
   },
-  //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
   {
     title: "MicroMouse",
     location: "Robotics Club",
@@ -60,12 +59,13 @@ let timeLineData = [
     icon: "Robotics",
   },
   {
-    title: "Ooooh that's deep",
-    description: "From white sand to red rocks, things they dream to see, All alone looking back home, what I see is a Wall blocking mE",
+    title: "Rover Dynamics",
+    description: "Ooooh that's deep ; \"From white sand to red rocks, things they dream to see, All alone looking back home, what I see is a Wall blocking mE\"",
     date: "1st July",
-    color: "#00ff00",
-    icon: "Ques",
+    color: "#ffa000",
+    icon: "Motorsports",
   },
+  //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
   {
     title: "Doesn't sound complete... ",
     description: "Across mountains and valleys, the traveler's bull's hooves... ",

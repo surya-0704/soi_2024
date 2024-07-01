@@ -228,7 +228,6 @@
         currentShuffleTime = Math.floor(Math.random() * (maxShuffleTime - minShuffleTime + 1)) + minShuffleTime;
         let nextMultiple = Math.ceil(currentShuffleTime / shuffleTimeInterval) * shuffleTimeInterval;
         currentShuffleTime = nextMultiple;
-        console.log(currentShuffleTime, shuffleTimeInterval, nextMultiple/shuffleTimeInterval);
         
         const interval = setInterval(() => {
             createDerangement(gameContainer);
@@ -283,6 +282,22 @@
     
     function handleSelection(event) {
         const selectedColorIndex = Array.from(gameContainer.children).indexOf(event.target);
+        Array.from(gameContainer.children)[selectedColorIndex].style.border = '2px solid white';
+        countdownBar.style.transition = '';
+        countdownBar.style.width = countdownBar.offsetWidth + 'px';
+        setTimeout(() => {
+            
+            Array.from(gameContainer.children)[selectedColorIndex].style.border = '2px solid black';
+        }, 70);
+        setTimeout(() => {
+            
+            Array.from(gameContainer.children)[selectedColorIndex].style.border = '2px solid white';
+        }, 140);
+        setTimeout(() => {
+            
+            Array.from(gameContainer.children)[selectedColorIndex].style.border = '2px solid black';
+        }, 210);
+            
         if (selectedColorIndex === correctColorIndex) {
             score++;
             scoreDisplay.textContent = 'Score: ' + score;
@@ -294,25 +309,29 @@
             clickCountdownTime = minClickCountdownTime + (maxClickCountdownTime - minClickCountdownTime) * (e ** (-score/10));
             shuffleTimeInterval = minShuffleTimeInterval + (maxShuffleTimeInterval - minShuffleTimeInterval) * (e ** (-score/10));
             backgroundMusic.playbackRate = maxPlaybackRate - (maxPlaybackRate - minPlaybackRate) * (e ** (-score/20));
-            console.log(backgroundMusic.playbackRate);
             
-            gameContainer.innerHTML = '';
-            startGame();
+            setTimeout(() => {
+                gameContainer.innerHTML = '';
+                startGame();
+            }, 1000);
         } else {
+            
             showPopOut(2000, "Game Over!");
             pauseBackgroundMusic();
-            
-            score = 0;
-            countdownBar.style.display = 'none';
-            scoreDisplay.style.display = 'none';
-            gameContainer.innerHTML = '';
-            startBtn.style.display = 'block';
-            
-            clickCountdownTime = maxClickCountdownTime;
-            shuffleTimeInterval = maxShuffleTimeInterval;
-            
-            const backgroundMusic = document.getElementById('backgroundMusic');
-            backgroundMusic.playbackRate = 1;
+                
+            setTimeout(() => {
+                score = 0;
+                countdownBar.style.display = 'none';
+                scoreDisplay.style.display = 'none';
+                gameContainer.innerHTML = '';
+                startBtn.style.display = 'block';
+                
+                clickCountdownTime = maxClickCountdownTime;
+                shuffleTimeInterval = maxShuffleTimeInterval;
+                
+                const backgroundMusic = document.getElementById('backgroundMusic');
+                backgroundMusic.playbackRate = 1;
+            }, 300);
         }
     }
     
