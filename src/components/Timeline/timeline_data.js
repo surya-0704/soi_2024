@@ -60,6 +60,7 @@ let timeLineData = [
   },
   {
     title: "Rover Dynamics",
+    location: "Ingene - Motorsports Club",
     description: "Ooooh that's deep ; \"From white sand to red rocks, things they dream to see, All alone looking back home, what I see is a Wall blocking mE\"",
     date: "1st July",
     color: "#ffa000",
