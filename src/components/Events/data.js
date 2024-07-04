@@ -57,6 +57,13 @@ const data = [
     knowMoreLink:
       "https://drive.google.com/file/d/1nmM7QHYibtQDO8vXYr59e4D_AAxPFbLL/view",
   },
+  {
+    heading: "Quantity",
+    content: "Embark on the Quantity adventure! Create, test, and refine your own trading strategies using Python on Quantiacs. Whether a newbie or a seasoned pro, unleash your creativity, master backtesting, and conquer risk management. Dive in and revolutionize your trading game!",
+    image: "Events/finance.jpeg",
+    knowMoreLink:
+      "https://drive.google.com/drive/folders/14sjacuqXdqnquStFbS-rMCLCDTiNzQX6",
+  },
 ];
 
 export default data;
