@@ -66,7 +66,6 @@ let timeLineData = [
     color: "#ffa000",
     icon: "Motorsports",
   },
-  //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
   {
     title: "Quantity - Juniors",
     location: "Insolvent - Finance Club",
@@ -84,18 +83,21 @@ let timeLineData = [
     icon: "Finance",
   },
   {
-    title: "Battle scars heal, but new ones come up",
-    description: "Are those deep craters, or tall mountains? The mighty Ares paints these with his enemies' blood",
+    title: "Auburn Marks",
+    location: "Cosmosoc - Space Data Science Club",
+    description: "\"Are those deep craters, or tall mountains? The mighty Ares paints these with his enemies' blood\" - Battle scars heal, but new ones come up",
     date: "7th July",
     color: "#00ff00",
-    icon: "Ques",
+    icon: "SDS",
   },
+    //icons: Coding, AI, Robotics, Design, Motorsports, Finance, SDS
   {
-    title: "Darkest light... Vantablack?",
-    description: "Pitch black my canvas, I carefully tread, Watch the darkest light, for it is the lead",
+    title: "Circuit Chase",
+    location: "Robotics Club, Code Geass - Coding Club",
+    description: "\"Pitch black my canvas, I carefully tread, Watch the darkest light, for it is the lead\" - Darkest light... Vantablack?",
     date: "7th July",
     color: "#0099ff",
-    icon: "Ques",
+    icon: "Robotics",
   },
 ]
 

@@ -64,6 +64,20 @@ const data = [
     knowMoreLink:
       "https://drive.google.com/drive/folders/14sjacuqXdqnquStFbS-rMCLCDTiNzQX6",
   },
+  {
+    heading: "Auburn Marks",
+    content: "Explore the diverse terrains of Mars using a Machine Learning model that helps our lander make intelligent landing decisions. Enhance your machine learning skills while contributing to groundbreaking space exploration.",
+    image: "Events/sds_sr.jpg",
+    knowMoreLink:
+      "https://drive.google.com/file/d/1jVuQeAgVNSIh15-ceAEeDTnnC8WMaTkZ/view",
+  },
+  {
+    heading: "Circuit Chase",
+    content: "Welcome to Circuit Chase! Develop, test, and optimize your line-following robot for conquering labyrinthine tracks. Whether you're a beginner or an experienced hobbyist, unleash your ingenuity and master maze navigation. Dive into the competition and elevate your robotics skills!",
+    image: "Events/robotics_coding_jr.png",
+    knowMoreLink:
+      "",
+  },
 ];
 
 export default data;
