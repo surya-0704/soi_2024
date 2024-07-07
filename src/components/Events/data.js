@@ -65,7 +65,7 @@ const data = [
       "https://drive.google.com/drive/folders/14sjacuqXdqnquStFbS-rMCLCDTiNzQX6",
   },
   {
-    heading: "Auburn Marks",
+    heading: "Auburn Waves",
     content: "Explore the diverse terrains of Mars using a Machine Learning model that helps our lander make intelligent landing decisions. Enhance your machine learning skills while contributing to groundbreaking space exploration.",
     image: "Events/sds_sr.jpg",
     knowMoreLink:

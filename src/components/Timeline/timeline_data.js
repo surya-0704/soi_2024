@@ -83,7 +83,7 @@ let timeLineData = [
     icon: "Finance",
   },
   {
-    title: "Auburn Marks",
+    title: "Auburn Waves",
     location: "Cosmosoc - Space Data Science Club",
     description: "\"Are those deep craters, or tall mountains? The mighty Ares paints these with his enemies' blood\" - Battle scars heal, but new ones come up",
     date: "7th July",
