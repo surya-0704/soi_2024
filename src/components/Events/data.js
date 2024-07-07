@@ -76,7 +76,7 @@ const data = [
     content: "Welcome to Circuit Chase! Develop, test, and optimize your line-following robot for conquering labyrinthine tracks. Whether you're a beginner or an experienced hobbyist, unleash your ingenuity and master maze navigation. Dive into the competition and elevate your robotics skills!",
     image: "Events/robotics_coding_jr.png",
     knowMoreLink:
-      "",
+      "https://drive.google.com/drive/folders/1UDGr0HSmmfIxMJkF9ZlTsgX2PhBgAOnG",
   },
 ];
 
