@@ -71,6 +71,11 @@ export default function AppBar({ current }) {
                 </Link>
               </div>
               <div className={styles.option}>
+                <Link href="/#winners" scroll={false}>
+                  <div>Winners</div>
+                </Link>
+              </div>
+              <div className={styles.option}>
                 <Link href="/#footer" scroll={false}>
                   <div>Contact</div>
                 </Link>

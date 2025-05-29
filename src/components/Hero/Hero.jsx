@@ -41,7 +41,7 @@ export default function Hero() {
         <div className={`${styles.hero}`}>
           <div className={styles.heroContentWrapper}>
             <div className={styles.heroMain}>
-              <h1>Summer of Innovation 2024</h1>
+              <h1>Summer of Innovation 2025</h1>
               <div className={styles.heroQuoteWrapper}>
                 <div className={styles.styleBar}></div>
                 <div className={styles.Quote}>This Summer conquer your fallacies and carve your finesse.</div>
@@ -71,7 +71,7 @@ export default function Hero() {
             </div>
             <div className={styles.aboutContent}>
               <div style={{padding: 10}}>
-                <center> <h3> Welcome to the fifth edition of Summer of Innovation! </h3> </center>
+                <center> <h3> Welcome to the sixth edition of Summer of Innovation! </h3> </center>
               </div>
 
               <div style={{padding: 10}}>
