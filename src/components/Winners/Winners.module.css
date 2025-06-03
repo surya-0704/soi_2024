@@ -1,0 +1,79 @@
+.winnerBody {
+    background-color: #f9d342; /* Background color for the page */
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .winnerWrapper {
+    position: relative;
+    width: calc(100% - 160px);
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  
+  .winnersContentWrapper {
+    position: relative;
+  }
+  
+  .fireworksContainer {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Fixed height for fireworks effect */
+    overflow: hidden;
+    background: transparent; /* Ensure fireworks are visible */
+  }
+  
+  .winnerHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8); /* Light background to enhance visibility */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1; /* Ensure header text is above fireworks */
+    text-align: center;
+  }
+  
+  .winnerContainer + .winnerContainer {
+    margin-top: 4rem;
+  }
+  
+  .winnerContainer h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #000;
+  }
+  
+  /*------------------ Team Names and Members --------------------*/
+  .winnerTeamWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .winnerTeamContainer {
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .winnerTeamContainer h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .memberList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .memberList li {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555;
+  }
+  

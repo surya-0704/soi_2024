@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DANCE!</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        font-family: 'Press Start 2P', monospace; /* Use Press Start 2P font */
+        position: relative;
+    }
+
+    #score-display {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.5rem;
+    }
+
+    #game-container {
+        width: 90vw;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        cursor: pointer;
+    }
+
+    .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    #start-btn {
+        font-size: 2rem;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #countdown-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 5px;
+        background-color: white;
+        display: none;
+    }
+
+    /* Media Query for smaller screens */
+    @media only screen and (max-width: 600px) {
+        #game-container {
+            width: 90%;
+            height: 50vh;
+        }
+
+        .cell {
+            font-size: 2vw;
+        }
+
+        #start-btn {
+            font-size: 3vw;
+            padding: 1vw;
+            margin-top: 1vw;
+        }
+
+        #score-display {
+            font-size: 3vw;
+        }
+    }
+    
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        #game-container {
+            width: 70%;
+            height: 40vh;
+        }
+
+        .cell {
+            font-size: 1.5vw;
+        }
+
+        #start-btn {
+            font-size: 2.5vw;
+            padding: 0.5vw;
+            margin-top: 0.5vw;
+        }
+
+        #score-display {
+            font-size: 2.5vw;
+        }
+    }
+</style>
+
+<style>
+    .pop-out {
+    color: black;
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: popOut 1s forwards;
+    }
+
+    @keyframes popOut {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    }
+</style>
+
+</head>
+<body>
+<div id="game-container">
+</div>
+<button id="start-btn">Play</button>
+<div id="countdown-bar"></div>
+<div id="score-display" style="display: none;"></div>
+<div id="popOutText" class="pop-out"></div>
+<audio id="backgroundMusic" loop>
+    <source src="dance.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink', 'brown', 'cyan', 'magenta', 'lime', 'teal', 'indigo', 'violet', 'maroon', 'olive'];
+
+    const colorNames = ['Red', 'Blue', 'Green', 'Yellow', 'Purple', 'Orange', 'Pink', 'Brown', 'Cyan', 'Magenta', 'Lime', 'Teal', 'Indigo', 'Violet', 'Maroon', 'Olive'];
+
+    const gameContainer = document.getElementById('game-container');
+    const startBtn = document.getElementById('start-btn');
+    const countdownBar = document.getElementById('countdown-bar');
+    const scoreDisplay = document.getElementById('score-display');
+    const numberOfCells = 16;
+    
+    const e = 2.718281828;
+
+    let score = 0;
+    let correctColorIndex;
+    let correctNameIndex;
+    
+    const maxClickCountdownTime = 9;
+    const minClickCountdownTime = 2;
+    const maxShuffleTime = 8000;
+    const minShuffleTime = 3000;
+    const maxShuffleTimeInterval = 1000;
+    const minShuffleTimeInterval = 500;
+    const minPlaybackRate = 1;
+    const maxPlaybackRate = 1.3;
+    
+    let clickCountdownTime = maxClickCountdownTime;
+    let shuffleTimeInterval = maxShuffleTimeInterval;
+
+    startBtn.addEventListener('click', setupGameAndBegin);
+    
+
+    
+    function setupGameAndBegin() {
+        playBackgroundMusic();
+        startGame();
+    }
+    
+    function startGame() {
+        startBtn.style.display = 'none';
+        
+        countdownBar.style.display = 'block';
+        countdownBar.addEventListener('transitionend', countdownEndHandler);
+        
+        const scoreDisplay = document.getElementById('score-display');
+        scoreDisplay.textContent = 'Score: ' + score;
+        scoreDisplay.style.display = 'block';
+        scoreDisplay.style.backgroundColor = 'blue';
+        scoreDisplay.style.borderRadius = '0';
+        scoreDisplay.style.padding = '10px 20px';
+        scoreDisplay.style.color = 'white';
+        
+        const cells = Array.from({ length: numberOfCells }, (_, index) => index);
+
+        cells.forEach((cellIndex, index) => {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.style.backgroundColor = colors[index];
+            cell.style.border = '2px solid black'
+            cell.textContent = colorNames[cells[index]];
+            cell.style.color = getContrastColor(colors[index]);
+            gameContainer.appendChild(cell);
+        });
+        
+        countdownBar.style.transition = 'width 0s linear'
+        countdownBar.style.width = '100%';
+        
+        currentShuffleTime = Math.floor(Math.random() * (maxShuffleTime - minShuffleTime + 1)) + minShuffleTime;
+        let nextMultiple = Math.ceil(currentShuffleTime / shuffleTimeInterval) * shuffleTimeInterval;
+        currentShuffleTime = nextMultiple;
+        
+        const interval = setInterval(() => {
+            createDerangement(gameContainer);
+                    
+            while(1) {
+                    
+                    let correctColorCellIndex = Math.floor(Math.random() * numberOfCells);
+                    
+                    let correctColor = gameContainer.children[correctColorCellIndex].style.backgroundColor
+                    let correctColorText = colorNames[colors.indexOf(correctColor)];
+                    
+                    let wrongColorText = gameContainer.children[correctColorCellIndex].textContent;
+                    let wrongColor = colors[colorNames.indexOf(wrongColorText)]
+                    
+                    let switchIndex = -1;
+                    
+                    switchIndex = Array.from(gameContainer.children).findIndex((element, idx) => {
+                        return idx !== 15 && element.textContent === correctColorText && element.style.backgroundColor !== wrongColor;
+                    });
+                    
+                    
+                    if(switchIndex !== -1) {
+                        correctColorIndex = correctColorCellIndex;
+                        gameContainer.children[correctColorCellIndex].textContent = correctColorText;
+                        gameContainer.children[switchIndex].textContent = wrongColorText;
+                        console.log("Switched", correctColorCellIndex, switchIndex);
+                        break;
+                    }
+            }
+        }, shuffleTimeInterval);
+        
+        setTimeout(() => {
+            clearInterval(interval);
+            setTimeout(() => {
+                checkSelection();
+            }, shuffleTimeInterval);
+            setTimeout(() => {
+                checkSelection();
+            }, 0);
+            countdownBar.style.transition = 'width ' + clickCountdownTime + 's linear'
+            countdownBar.style.width = '0%';
+        }, currentShuffleTime);
+        
+        
+    }
+
+    function checkSelection() {
+        gameContainer.addEventListener('click', handleSelection);
+    }
+
+    let commentArray = ['Nice!', 'Wow!', 'Awesome!', 'Great!', 'Woohooo!']
+    
+    function handleSelection(event) {
+        const selectedColorIndex = Array.from(gameContainer.children).indexOf(event.target);
+        Array.from(gameContainer.children)[selectedColorIndex].style.border = '2px solid white';
+        countdownBar.style.transition = '';
+        countdownBar.style.width = countdownBar.offsetWidth + 'px';
+        setTimeout(() => {
+            
+            Array.from(gameContainer.children)[selectedColorIndex].style.border = '2px solid black';
+        }, 70);
+        setTimeout(() => {
+            
+            Array.from(gameContainer.children)[selectedColorIndex].style.border = '2px solid white';
+        }, 140);
+        setTimeout(() => {
+            
+            Array.from(gameContainer.children)[selectedColorIndex].style.border = '2px solid black';
+        }, 210);
+            
+        if (selectedColorIndex === correctColorIndex) {
+            score++;
+            scoreDisplay.textContent = 'Score: ' + score;
+            goodText = commentArray[Math.floor(Math.random() * (commentArray.length))];
+            showPopOut(700, goodText);
+            
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            
+            clickCountdownTime = minClickCountdownTime + (maxClickCountdownTime - minClickCountdownTime) * (e ** (-score/10));
+            shuffleTimeInterval = minShuffleTimeInterval + (maxShuffleTimeInterval - minShuffleTimeInterval) * (e ** (-score/10));
+            backgroundMusic.playbackRate = maxPlaybackRate - (maxPlaybackRate - minPlaybackRate) * (e ** (-score/20));
+            
+            setTimeout(() => {
+                gameContainer.innerHTML = '';
+                startGame();
+            }, 1000);
+        } else {
+            
+            showPopOut(2000, "Game Over!");
+            pauseBackgroundMusic();
+                
+            setTimeout(() => {
+                score = 0;
+                countdownBar.style.display = 'none';
+                scoreDisplay.style.display = 'none';
+                gameContainer.innerHTML = '';
+                startBtn.style.display = 'block';
+                
+                clickCountdownTime = maxClickCountdownTime;
+                shuffleTimeInterval = maxShuffleTimeInterval;
+                
+                const backgroundMusic = document.getElementById('backgroundMusic');
+                backgroundMusic.playbackRate = 1;
+            }, 300);
+        }
+    }
+    
+    function countdownEndHandler(event) {
+        if(countdownBar.style.width == '0%') {
+            showPopOut(2000, "Game Over!");
+            pauseBackgroundMusic();
+                
+            score = 0;
+            countdownBar.style.display = 'none';
+            scoreDisplay.style.display = 'none';
+            gameContainer.innerHTML = '';
+            startBtn.style.display = 'block';
+            
+            clickCountdownTime = maxClickCountdownTime;
+            shuffleTimeInterval = maxShuffleTimeInterval;
+            
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            backgroundMusic.playbackRate = 1;
+        }
+    }
+
+    function shuffleArrayCells(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        
+        return array;
+    }
+    
+    function shuffleArrayText(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i].textContent, array[j].textContent] = [array[j].textContent, array[i].textContent];
+        }
+        
+        return array;
+    }
+    
+    function shuffleArrayColors(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i].style.backgroundColor, array[j].style.backgroundColor] = [array[j].style.backgroundColor, array[i].style.backgroundColor];
+        }
+        return array;
+    }
+    
+    function isDerangement(arr) {
+        return arr.every((element, index) => colors.indexOf(element.style.backgroundColor) !== colorNames.indexOf(element.textContent));
+    }
+    
+    function createDerangement(gameContainer) {
+        let initialArray = Array.from(gameContainer.children);
+        
+        let shuffledCells = shuffleArrayCells(initialArray);
+        
+        while (!isDerangement(shuffledCells)) {
+            shuffledCells = shuffleArrayText(shuffledCells);
+            shuffledCells = shuffleArrayColors(shuffledCells);
+        }
+
+        return shuffledCells;
+    }
+
+    function getContrastColor(hexColor) {
+        return parseInt(hexColor.replace('#', ''), numberOfCells) > 0xffffff / 2 ? '#000' : '#fff';
+    }
+
+    function showPopOut(timeout, displayText) {
+        var popOutElement = document.getElementById("popOutText");
+        popOutElement.style.display = "block";
+        popOutElement.textContent = displayText;
+        setTimeout(function() {
+            popOutElement.style.display = "none";
+        }, timeout);
+    }
+    
+    function playBackgroundMusic() {
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        backgroundMusic.play();
+    }
+
+    function pauseBackgroundMusic() {
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        backgroundMusic.pause();
+    }
+</script>
+
+</body>
+</html>
+
