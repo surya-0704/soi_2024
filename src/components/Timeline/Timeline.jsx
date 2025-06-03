@@ -64,9 +64,10 @@ export default function Timeline() {
                     <h2 className="vertical-timeline-element-title">
                       {data.title}
                     </h2>
-                    <h5 className="vertical-timeline-element-subtitle">
+
+                    <h3 style={{color: '#aaa', fontStyle: 'italic'}} className="vertical-timeline-element-subtitle">
                       {data.location}
-                    </h5>
+                    </h3>
                     {data.gifUrl && (
                       <div className={styles.gifContainer}>
                         <img

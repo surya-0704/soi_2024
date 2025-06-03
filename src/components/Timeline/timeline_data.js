@@ -15,6 +15,14 @@ let timeLineData = [
     color: "#f6d32d",
     icon: "SDS",
   },
+  {
+    title: "RoboMapper Odyssey",
+    location: "Robotics Club",
+    description: "Explore ROS2 Humble through a hands-on project by building an autonomous robot for 2D SLAM mapping and navigation, achieving milestones in tele-op control, manual exploration, and autonomous navigation.",
+    date: "3rd June 2025",
+    color: "#0099ff",
+    icon: "Robotics",
+  },
   // {
   //   title: "Mission Mars: Emergency Reaction Wheel Redesign",
   //   location: "Cosmosoc - Space Data Science Club",

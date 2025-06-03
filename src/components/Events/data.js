@@ -15,6 +15,14 @@ const data = [
     knowMoreLink:
      "/Events/sds-lunar.pdf",
   },
+  {
+    heading: "RoboMapper Odyssey",
+    content:
+      "Aim to explore and experience ROS2 Humble via a hands-on project divided into various stages. Build an autonomous robot using ROS2 that performs 2D SLAM mapping and navigation. Learn via milestones - basic tele-op control, manual exploration with real-time mapping, and autonomous navigation!",
+    image: "/Events/robotics-ros.jpg",
+    knowMoreLink:
+     "https://robotics-club-iit-dharwad.vercel.app/events",
+  },
   // {
   //   heading: "Mission Mars: Emergency Reaction Wheel Redesign",
   //   content:

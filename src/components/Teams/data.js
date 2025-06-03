@@ -1,12 +1,78 @@
 const teamsData = [
       {
-        name: "Default Man",
+        name: "AI Club",
         members: [
           {
-              name: "John Doe",
+              name: "Nihar Sagar G",
+              image: "/Team/nihar-sagar-g.jpg",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+        ],
+      },
+      {
+        name: "Space Data Science Club",
+        members: [
+          {
+              name: "Nishant Mehta",
+              image: "/Team/nishant-mehta.png",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+          {
+              name: "Dev Kaushal",
+              image: "/Team/dev-kaushal.jpeg",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+          {
+              name: "Richa Rajashekhar",
+              image: "/Team/richa-rajashekhar.jpg",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+          {
+              name: "Surya Prakash S",
+              image: "/Team/surya-prakash-s.jpg",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+          {
+              name: "Shreya Bhat",
+              image: "/Team/shreya-bhat.jpg",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+          {
+              name: "Anushaa B",
               image: "/Team/xyz.jpg",
-              email: "email@example.com",
-              linkedin: "example.com",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+        ],
+      },
+      {
+        name: "Robotics Club",
+        members: [
+          {
+              name: "Vidit Parikh",
+              image: "/Team/vidit-parikh.png",
+              email: "",
+              linkedin: "",
               twitter: "",
               instagram: "",
           },
