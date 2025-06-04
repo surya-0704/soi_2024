@@ -23,6 +23,15 @@ const data = [
     knowMoreLink:
      "https://robotics-club-iit-dharwad.vercel.app/events/soi-slam",
   },
+  {
+    heading: "Poster Pitstop",
+    content:
+      "Poster Pitstop is a motorsports-themed poster-making competition. Showcase your creativity and racing passion on paper. Design bold, expressive visuals that capture the thrill of speed. Fuel your imagination — it's not just art, it's adrenaline!",
+    image: "/Events/motorsports-design-poster.jpg",
+    knowMoreLink:
+     "/Events/motorsports-design-poster.pdf",
+  },
+
   // {
   //   heading: "Mission Mars: Emergency Reaction Wheel Redesign",
   //   content:

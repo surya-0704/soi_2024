@@ -57,7 +57,7 @@ const teamsData = [
           },
           {
               name: "Anushaa B",
-              image: "/Team/xyz.jpg",
+              image: "/Team/anushaa-b.jpg",
               email: "",
               linkedin: "",
               twitter: "",
@@ -71,6 +71,19 @@ const teamsData = [
           {
               name: "Vidit Parikh",
               image: "/Team/vidit-parikh.png",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+        ],
+      },
+      {
+        name: "Motorsports Club",
+        members: [
+          {
+              name: "Soumya Shaw",
+              image: "/Team/soumya-shaw.jpg",
               email: "",
               linkedin: "",
               twitter: "",

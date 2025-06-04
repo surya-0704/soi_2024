@@ -23,6 +23,14 @@ let timeLineData = [
     color: "#0099ff",
     icon: "Robotics",
   },
+  {
+    title: "Poster Pitstop",
+    location: "Abhikalpa (Design) & Ingene (Motorsports) Clubs",
+    description: "Join a motorsports-themed poster-making competition to showcase your creativity and passion for racing by designing bold visuals that capture the thrill of speed and competition!",
+    date: "3rd June 2025",
+    color: "#ffc0cb",
+    icon: "Design",
+  },
   // {
   //   title: "Mission Mars: Emergency Reaction Wheel Redesign",
   //   location: "Cosmosoc - Space Data Science Club",
