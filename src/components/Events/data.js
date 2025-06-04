@@ -1,12 +1,12 @@
 const data = [
-    {
-    heading: "Fraudit - Bank Fraud Detection with Machine Learning",
-    content:
-      "Fraudit is all about using machine learning to catch shady transactions. You'll work with a dataset of bank activity and train simple ML models to figure out which transactions look suspicious. It’s like being a digital detective — spotting fraud using patterns in the data!!",
-    image: "/Events/ai-fraud.png",
-    knowMoreLink:
-     "/Events/ai-fraud.pdf",
-  },
+  //   {
+  //   heading: "Fraudit - Bank Fraud Detection with Machine Learning",
+  //   content:
+  //     "Fraudit is all about using machine learning to catch shady transactions. You'll work with a dataset of bank activity and train simple ML models to figure out which transactions look suspicious. It’s like being a digital detective — spotting fraud using patterns in the data!!",
+  //   image: "/Events/ai-fraud.png",
+  //   knowMoreLink:
+  //    "/Events/ai-fraud.pdf",
+  // },
   {
     heading: "Lunar Vision: Crater & Boulder Detection Challenge",
     content:

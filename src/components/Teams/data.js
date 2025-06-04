@@ -1,17 +1,17 @@
 const teamsData = [
-      {
-        name: "AI Club",
-        members: [
-          {
-              name: "Nihar Sagar G",
-              image: "/Team/nihar-sagar-g.jpg",
-              email: "",
-              linkedin: "",
-              twitter: "",
-              instagram: "",
-          },
-        ],
-      },
+      // {
+      //   name: "AI Club",
+      //   members: [
+      //     {
+      //         name: "Nihar Sagar G",
+      //         image: "/Team/nihar-sagar-g.jpg",
+      //         email: "",
+      //         linkedin: "",
+      //         twitter: "",
+      //         instagram: "",
+      //     },
+      //   ],
+      // },
       {
         name: "Space Data Science Club",
         members: [

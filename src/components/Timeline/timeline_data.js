@@ -1,12 +1,12 @@
 let timeLineData = [
-  {
-    title: "Fraudit - Bank Fraud Detection",
-    location: "Hardly Human - AI Club",
-    description: "Use machine learning to analyze bank transactions and identify suspicious activities like a digital detective.",
-    date: "3rd June 2025",
-    color: "#00ffff",
-    icon: "AI",
-  },
+  // {
+  //   title: "Fraudit - Bank Fraud Detection",
+  //   location: "Hardly Human - AI Club",
+  //   description: "Use machine learning to analyze bank transactions and identify suspicious activities like a digital detective.",
+  //   date: "3rd June 2025",
+  //   color: "#00ffff",
+  //   icon: "AI",
+  // },
   {
     title: "Lunar Vision: Crater & Boulder Detection",
     location: "Cosmosoc - Space Data Science Club",
