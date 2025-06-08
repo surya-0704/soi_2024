@@ -1,17 +1,46 @@
 const teamsData = [
-      // {
-      //   name: "AI Club",
-      //   members: [
-      //     {
-      //         name: "Nihar Sagar G",
-      //         image: "/Team/nihar-sagar-g.jpg",
-      //         email: "",
-      //         linkedin: "",
-      //         twitter: "",
-      //         instagram: "",
-      //     },
-      //   ],
-      // },
+      {
+        name: "Coding Club",
+        members: [
+          {
+              name: "Amogh R",
+              image: "/Team/amogh-r.jpg",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+          {
+              name: "Eshwar R",
+              image: "/Team/eshwar-r.jpg",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+          {
+              name: "Ahamed Noor",
+              image: "/Team/ahamed-noor.jpg",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+        ],
+      },
+      {
+        name: "AI Club",
+        members: [
+          {
+              name: "Nihar Sagar G",
+              image: "/Team/nihar-sagar-g.jpg",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+        ],
+      },
       {
         name: "Space Data Science Club",
         members: [

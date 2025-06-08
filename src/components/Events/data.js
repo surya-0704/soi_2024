@@ -31,6 +31,14 @@ const data = [
     knowMoreLink:
      "/Events/motorsports-design-poster.pdf",
   },
+  {
+    heading: "AdversaRL: Reinforcement Learning in Game Development",
+    content:
+      "AdversaRL gives you the opportunity to show off your skills in Game Development and the field of AI! Design and develop a unique game that features an adversarial setup, where players can engage with a Reinforcement Learning (RL) agent! Can you beat your own bot? Find out by participating!",
+    image: "/Events/ai-gamedev.jpg",
+    knowMoreLink:
+     "/Events/ai-gamedev.pdf",
+  },
 
   // {
   //   heading: "Mission Mars: Emergency Reaction Wheel Redesign",

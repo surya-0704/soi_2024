@@ -31,6 +31,14 @@ let timeLineData = [
     color: "#ffc0cb",
     icon: "Design",
   },
+  {
+    title: "AdversaRL",
+    location: "Code Geass (Coding) & Hardly Human (AI) Clubs",
+    description: "Love GameDev? Love AI? (or maybe you're just exploring, and that's okay!) Why not dive into both! Join the AdversaRL challenge, and design a unique game that features exciting gameplay with Reinforcement Learning agents!",
+    date: "8th June 2025",
+    color: "#ffee00",
+    icon: "Coding",
+  },
   // {
   //   title: "Mission Mars: Emergency Reaction Wheel Redesign",
   //   location: "Cosmosoc - Space Data Science Club",
