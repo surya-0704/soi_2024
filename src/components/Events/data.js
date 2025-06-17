@@ -39,15 +39,14 @@ const data = [
     knowMoreLink:
      "/Events/ai-gamedev.pdf",
   },
-
-  // {
-  //   heading: "Mission Mars: Emergency Reaction Wheel Redesign",
-  //   content:
-  //     "You are part of a Mars-bound mission aboard the spacecraft Aether-1. Midway through the journey, the spacecraft begins to tumble — your primary reaction wheel has failed.  Your task is to design, power, and control a brand-new reaction wheel system that can stabilize the spacecraft before it drifts off-course permanently.",
-  //   image: "/Events/sds-mars.jpeg",
-  //   knowMoreLink:
-  //    "/Events/sds-mars.pdf",
-  // },
+  {
+    heading: "Mission Mars: Emergency Reaction Wheel Redesign",
+    content:
+      "You are part of a Mars-bound mission aboard the spacecraft Aether-1. Midway through the journey, the spacecraft begins to tumble — your primary reaction wheel has failed.  Your task is to design, power, and control a brand-new reaction wheel system that can stabilize the spacecraft before it drifts off-course permanently.",
+    image: "/Events/sds-mars.jpeg",
+    knowMoreLink:
+     "/Events/sds-mars.pdf",
+  },
 ];
 
 export default data;

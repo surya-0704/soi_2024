@@ -39,14 +39,14 @@ let timeLineData = [
     color: "#ffee00",
     icon: "Coding",
   },
-  // {
-  //   title: "Mission Mars: Emergency Reaction Wheel Redesign",
-  //   location: "Cosmosoc - Space Data Science Club",
-  //   description: "Design, power, and control a new reaction wheel system to stabilize the tumbling Aether-1 spacecraft on its Mars-bound mission before it drifts off-course.",
-  //   date: "3rd June 2025",
-  //   color: "#ff0000",
-  //   icon: "SDS",
-  // }
+  {
+    title: "Mission Mars: Emergency Reaction Wheel Redesign",
+    location: "Cosmosoc - Space Data Science Club",
+    description: "Design, power, and control a new reaction wheel system to stabilize the tumbling Aether-1 spacecraft on its Mars-bound mission before it drifts off-course.",
+    date: "18th June 2025",
+    color: "#ff0000",
+    icon: "SDS",
+  }
 ]
 
 export default timeLineData
