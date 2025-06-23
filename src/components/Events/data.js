@@ -51,7 +51,7 @@ const data = [
     heading: "Newton’s Nightmare: The Unphysics Challenge",
     content:
       "What if the laws of physics took a day off? Here's your chance to break them all. Design wild, brain-bending car models that would make Newton roll in his grave. Let your imagination defy gravity—literally.",
-    image: "/Events/sds-mars.jpeg",
+    image: "/Events/motorsports-newton.png",
     knowMoreLink:
      "/Events/motorsports-newton.pdf",
   },
