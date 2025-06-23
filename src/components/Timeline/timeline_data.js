@@ -32,7 +32,7 @@ let timeLineData = [
     icon: "Design",
   },
   {
-    title: "AdversaRL",
+    title: "AdversaRL: Game Development",
     location: "Code Geass (Coding) & Hardly Human (AI) Clubs",
     description: "Love GameDev? Love AI? (or maybe you're just exploring, and that's okay!) Why not dive into both! Join the AdversaRL challenge, and design a unique game that features exciting gameplay with Reinforcement Learning agents!",
     date: "8th June 2025",
@@ -46,6 +46,14 @@ let timeLineData = [
     date: "18th June 2025",
     color: "#ff0000",
     icon: "SDS",
+  },
+  {
+    title: "Newton's Nightmare",
+    location: "Abhikalpa (Design) & Ingene (Motorsports) Clubs",
+    description: "What if the laws of physics took a day off? Here's your chance to break them all. Design wild, brain bending car models that would make Newton roll in his grave.",
+    date: "20th June 2025",
+    color: "#0099ff",
+    icon: "Motorsports",
   }
 ]
 
