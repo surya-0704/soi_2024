@@ -1,12 +1,4 @@
 const data = [
-  //   {
-  //   heading: "Fraudit - Bank Fraud Detection with Machine Learning",
-  //   content:
-  //     "Fraudit is all about using machine learning to catch shady transactions. You'll work with a dataset of bank activity and train simple ML models to figure out which transactions look suspicious. It’s like being a digital detective — spotting fraud using patterns in the data!!",
-  //   image: "/Events/ai-fraud.png",
-  //   knowMoreLink:
-  //    "/Events/ai-fraud.pdf",
-  // },
   {
     heading: "Lunar Vision: Crater & Boulder Detection Challenge",
     content:
@@ -47,13 +39,29 @@ const data = [
     knowMoreLink:
      "/Events/sds-mars.pdf",
   },
-    {
+  {
     heading: "Newton’s Nightmare: The Unphysics Challenge",
     content:
       "What if the laws of physics took a day off? Here's your chance to break them all. Design wild, brain-bending car models that would make Newton roll in his grave. Let your imagination defy gravity—literally.",
     image: "/Events/motorsports-newton.png",
     knowMoreLink:
      "/Events/motorsports-newton.pdf",
+  },
+  {
+    heading: "JAIn Street - Algo Trading",
+    content:
+      "Ready to dive into the world of algorithmic trading? This 2-week competition challenges rookie quants to build automated trading algorithms that can outperform the market. You'll learn to backtest strategies, calculate risk metrics like VaR and Sharpe ratios, and most importantly. Show us your data-driven approach can beat the market without emotions getting in the way!",
+    image: "/Events/finance-algo.jpg",
+    knowMoreLink:
+     "/Events/finance-algo.pdf",
+  },
+  {
+    heading: "Fraudit - Bank Fraud Detection with Machine Learning",
+    content:
+      "Fraudit is all about using machine learning to catch shady transactions. You'll work with a dataset of bank activity and train simple ML models to figure out which transactions look suspicious. It’s like being a digital detective — spotting fraud using patterns in the data!!",
+    image: "/Events/ai-fraud.png",
+    knowMoreLink:
+     "/Events/ai-fraud.pdf",
   },
 ];
 

@@ -1,12 +1,4 @@
 let timeLineData = [
-  // {
-  //   title: "Fraudit - Bank Fraud Detection",
-  //   location: "Hardly Human - AI Club",
-  //   description: "Use machine learning to analyze bank transactions and identify suspicious activities like a digital detective.",
-  //   date: "3rd June 2025",
-  //   color: "#00ffff",
-  //   icon: "AI",
-  // },
   {
     title: "Lunar Vision: Crater & Boulder Detection",
     location: "Cosmosoc - Space Data Science Club",
@@ -54,7 +46,23 @@ let timeLineData = [
     date: "20th June 2025",
     color: "#0099ff",
     icon: "Motorsports",
-  }
+  },
+  {
+    title: "JAIn Street - Algo Trading",
+    location: "Insolvent - Finance Club",
+    description: "Ready to dive into the world of algorithmic trading? Build automated trading algorithms that can outperform the market. Show us your data-driven approach can beat the market without emotions getting in the way!",
+    date: "1st July 2025",
+    color: "#ffee00",
+    icon: "Finance",
+  },
+  {
+    title: "Fraudit - Bank Fraud Detection",
+    location: "Hardly Human - AI Club",
+    description: "Use machine learning to analyze bank transactions and identify suspicious activities like a digital detective.",
+    date: "3rd June 2025",
+    color: "#00ffff",
+    icon: "AI",
+  },
 ]
 
 export default timeLineData

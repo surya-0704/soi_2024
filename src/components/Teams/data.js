@@ -181,6 +181,19 @@ const teamsData = [
           },
         ],
       },
+      {
+        name: "Finance Club",
+        members: [
+          {
+              name: "Yash Sanjeev Halbhavi",
+              image: "/Team/yash-sanjeev-halbhavi.jpg",
+              email: "",
+              linkedin: "",
+              twitter: "",
+              instagram: "",
+          },
+        ],
+      },
   ];
 
   export default teamsData;
